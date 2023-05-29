@@ -1,5 +1,40 @@
-div {
-  font-size: 28px;
-  font-weight: bold;
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* outline: 1px solid red; */
+}
+
+.activeNav {
+  border-bottom: 1px solid #0a460d;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 40px !important;
+}
+.navbar img {
+  width: 80px;
+}
+.navbar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.navbar div a {
+  text-decoration: none;
+  color: #0a460d;
+}
+.navbar .appointment {
+  text-decoration: none;
+  color: #0a460d;
+  background-color: #9dffa7;
+  padding: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.navbar .appointment:hover {
+  border: 1px solid #0a460d;
 }/*# sourceMappingURL=main.css.map */

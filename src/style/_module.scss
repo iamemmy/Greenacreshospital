@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* outline: 1px solid red; */
+}
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+//Variable
+$colors:(
+    color01: #000000,
+    color02: #ffffff,
+    color03: #9dffa7,
+    color04: #0a460d
+);
+
+// Mixin
+@mixin mobile{
+    @media (max-width: 660.1px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: 960.1px){
+        @content;
+    }
+}
+
+//Utility classes
+.activeNav {
+    border-bottom: 1px solid getColor(color04);
+}

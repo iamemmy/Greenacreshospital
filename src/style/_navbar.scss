@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    padding: 20px 40px !important;
+    img {
+        width: 80px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        a {
+            text-decoration: none;
+            color: getColor(color04);
+        }
+    }
+    .appointment {
+        text-decoration: none;
+        color: getColor(color04);
+        background-color: getColor(color03);
+        padding: 10px;
+        border: 1px solid transparent;
+        transition: all .3s ease;
+        &:hover {
+            border: 1px solid getColor(color04);
+        }
+    }
+}
