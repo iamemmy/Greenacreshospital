@@ -1,0 +1,114 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    .intro-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 40px 30px;
+        width: 100%;
+        @include tablet {
+            padding: initial;
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+        @include mobile {
+            padding-top: 65px;
+        }
+        img {
+            position: absolute;
+            top: 24%;
+            left: 1%;
+            width: 50px;
+            @include tablet {
+                top: -18%;
+                left: -1%;
+                width: 45px;
+            }
+            @include mobile {
+                top: -4%;
+                width: 40px;
+            }
+        }
+        h3 {
+            font-size: 24px;
+            color: getColor(color05);
+            font-weight: 600;
+            text-align: center;
+            @include mobile {
+                font-size: 21px;
+            }
+            span {
+                color: getColor(color04);
+                font-style: italic;
+            }
+        }
+    }
+    .intro-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+        }
+        .bottom-1 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            h4 {
+                font-size: 19px;
+                color: getColor(color01);
+                font-weight: 600;
+                @include mobile {
+                    font-size: 17px;
+                }
+            }
+            p {
+                font-size: 15px;
+                color: getColor(color01);
+            }
+        }
+        .bottom-2 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            @include tablet {
+                width: 100%;
+            }
+            h4 {
+                font-size: 19px;
+                color: getColor(color01);
+                font-weight: 600;
+                @include mobile {
+                    font-size: 17px;
+                }
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                tr {
+                    &:nth-child(even) {
+                        background-color: getColor(color06);
+                    }
+                    td {
+                        border: 1px solid getColor(color05);
+                        font-size: 15px;
+                        color: getColor(color01);
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

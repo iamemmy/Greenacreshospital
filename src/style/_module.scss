@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    /* outline: 1px solid red; */
+    // outline: 1px solid red;
 }
 
 // Function
@@ -16,7 +16,9 @@ $colors:(
     color01: #000000,
     color02: #ffffff,
     color03: #9dffa7,
-    color04: #0a460d
+    color04: #0a460d,
+    color05: #808080,
+    color06: #dddddd
 );
 
 // Mixin

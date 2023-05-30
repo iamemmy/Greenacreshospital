@@ -1,17 +1,64 @@
 .navbar {
     width: 100%;
-    padding: 20px 40px !important;
+    padding: 16px 40px !important;
+    @include mobile {
+        padding: 8px 40px 8px 30px !important;
+    }
     img {
         width: 80px;
     }
-    div {
+    .menu-wrap {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 25px;
-        a {
+        @include mobile {
+            position: absolute;
+            top: 100%;
+            left: -600px;
+            flex-direction: column;
+            align-items: start;
+            padding: 40px;
+            gap: 15px;
+            background-color: getColor(color03);
+            min-height: 80vh;
+            min-width: 50vw;
+            transition: all .3s ease;
+            z-index: 999;
+            &.show {
+                left: 0;
+            }
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 30px;
+            }
+            a {
+                text-decoration: none;
+                color: getColor(color04);
+            }
+        }
+        .appointment-mobile {
+            display: none;
             text-decoration: none;
             color: getColor(color04);
+            background-color: getColor(color03);
+            padding: 10px;
+            border: 1px solid transparent;
+            transition: all .3s ease;
+            @include mobile {
+                border: 1px solid getColor(color04);
+                display: block;
+            }
+            &:hover {
+                border: 1px solid getColor(color04);
+            }
         }
     }
     .appointment {
@@ -21,8 +68,44 @@
         padding: 10px;
         border: 1px solid transparent;
         transition: all .3s ease;
+        @include mobile {
+            // border: 1px solid getColor(color04);
+            display: none;
+        }
         &:hover {
             border: 1px solid getColor(color04);
+        }
+    }
+    .hamburger {
+        display: none;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            margin-left: auto;
+            &.active{
+                .line{
+                    
+                    &:nth-child(1){
+                        transform-origin: 7%; 
+                        transform: rotate(45deg);
+                     }
+                     &:nth-child(2){
+                       opacity: 0;
+                     }
+                     &:nth-child(3){
+                        transform-origin: 11%;
+                        transform: rotate(-45deg) translateX(-1px)
+                     }
+                }
+            }
+        }
+        .line {
+            width: 25px;
+            height: 2px;
+            background-color: getColor(color01);
+            transition:  .3s ease;
         }
     }
 }
