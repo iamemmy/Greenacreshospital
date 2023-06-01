@@ -61,7 +61,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-
+      
       <div className='services-view-all'>
         <Link>View All &#10230;</Link>
       </div>

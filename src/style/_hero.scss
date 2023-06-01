@@ -52,10 +52,11 @@
             height: 80vh;
             img {
                 aspect-ratio: 16/8;
+                width: 100%;
                 object-fit: cover;
                 @include mobile{
                     aspect-ratio: 16/24;
-                    object-position: top;
+                    object-position: cover;
                 }
             }
         }
