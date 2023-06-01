@@ -1,0 +1,96 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    .services-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        h3 {
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: getColor(color04);
+        }
+        p {
+            font-size: 16px;
+            color: getColor(color01);
+            text-align: center;
+            width: 80%;
+            @include tablet {
+                width: 90%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+    .services-bottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        @include tablet {
+            gap: 20px;
+        }
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mini-mobile {
+            grid-template-columns: 1fr;
+        }
+        .service-card {
+            .service-card-top {
+                width: 100%;
+                img {
+                    width: 100%;
+                    border-radius: 3px;
+                }
+            }
+            .service-card-bottom {
+                padding: 20px 0;
+                h4 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: getColor(color04);
+                    @include tablet {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    color: getColor(color01);
+                    @include tablet {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .services-view-all {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        a {
+            text-decoration: none;
+            background-color: transparent;
+            color: getColor(color04);
+            border: 1px solid getColor(color04);
+            padding: 15px 40px;
+            transition: all .3s ease;
+            @include mobile {
+                padding: 10px 20px;
+            }
+            &:hover {
+                background-color: getColor(color03);
+            }
+        }
+    }
+}
