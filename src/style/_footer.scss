@@ -1,0 +1,199 @@
+.footer {
+    background-color: getColor(color04);
+    color: getColor(color02);
+    padding: 30px 50px;
+    .footer-top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid getColor(color02);
+        padding-bottom: 25px;
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            img {
+                width: 160px;
+            }
+            &:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                @include tablet {
+                    align-items: center;
+                }
+                h3 {
+                    font-size: 16px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: start;
+                    color: getColor(color02);
+                    @include mini-mobile {
+                        font-size: 14px;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    text-align: start;
+                    text-decoration: none;
+                    color: getColor(color02);
+                    margin-bottom: 3px;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: getColor(color03);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                @include tablet {
+                    align-items: center;
+                }
+                h3 {
+                    font-size: 16px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: start;
+                    color: getColor(color02);
+                    @include mini-mobile {
+                        font-size: 14px;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    text-align: start;
+                    text-decoration: none;
+                    color: getColor(color02);
+                    margin-bottom: 3px;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: getColor(color03);
+                    }
+                }
+            }
+            &:nth-child(4) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                @include tablet {
+                    align-items: center;
+                }
+                h3 {
+                    font-size: 16px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: start;
+                    color: getColor(color02);
+                    @include mini-mobile {
+                        font-size: 14px;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    text-align: start;
+                    text-decoration: none;
+                    color: getColor(color02);
+                    margin-bottom: 3px;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: getColor(color03);
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 50px 50px 25px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+        @include mobile {
+            padding: 40px 25px 25px 25px;
+        }
+        .footer-bottom-top {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            @include mobile {
+                justify-content: center;
+            }
+            img {
+                width: 24px;
+                transition: all .3s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .footer-bottom-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            @include tablet {
+                flex-direction: column;
+                gap: 20px;
+            }
+            @include mobile {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column-reverse;
+            }
+            div {
+                &:first-child {
+                    flex: 1;
+                    p {
+                        font-size: 15px;
+                        @include mobile {
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    flex: 1;
+                    display: flex;
+                    align-items: start;
+                    gap: 20px;
+                    width: 100%;
+                    @include mobile {
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    @include mini-mobile {
+                        flex-direction: column;
+                    }
+                    a {
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: getColor(color02);
+                        transition: all .3s ease;
+                        &:hover {
+                            color: getColor(color03);
+                        }
+                        @include mobile {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
