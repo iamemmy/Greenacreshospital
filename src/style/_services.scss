@@ -1,10 +1,143 @@
-.services {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-    padding: 30px;
-    position: relative;
+.service-page {
+    h1 {
+    color: getColor(color04);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    }
+    p {
+        text-align: center;
+        padding: 0 10px;
+    }
+   .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: fit-content;
+        padding: 3rem;
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+        .card {
+            // max-width: 500px;
+            margin: auto;
+            border: none;
+            height: fit-content;
+            padding: 10px;
+            img {
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+                box-shadow: gray 4px 4px 4px;
+                aspect-ratio: 4/4;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    scale: (1.1);
+                }
+                @include tablet {
+                    width: 100%;
+                }
+            }
+            div {
+                h4 {
+                    color: getColor(color04);
+                    font-family:'Roboto', sans-serif;
+                    text-align: center;
+                    padding: 25px;
+                    @include tablet{
+                        font-size: 20px;
+                    }
+                }
+                .card-text {
+                    font-size: 18px;
+                    padding-top: 0;
+                }
+            }
+        } 
+    }
+}
+footer {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    color: getColor(color02);
+    background-color: #0e270f;
+    text-align: center;
+    @include tablet {
+                grid-template-columns: 1fr 1fr;
+            }
+            @include mobile {
+                grid-template-columns: 1fr;
+            }
+    .logo-wrap {
+         max-width: 150px;
+        background-color: getColor(color02);
+        margin: 50px auto;
+        img {
+            width: 100%;
+        }
+    }
+    .gah {
+        h6 {
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        p {
+            margin: 8px;
+        }
+    }
+    .contact-us {
+        h5 {
+            margin-top: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        p {
+            margin: 8px;
+        }
+    }
+    .info {
+        margin-bottom: 10px;
+        padding-bottom: 30px;
+        h6 {
+            margin-top: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        p {
+            margin: 5px;
+        }
+    }
+    .social-icons {
+        font-size: 12px;
+        img {
+            width: 15px;
+            margin: 10px ;
+        }
+        .copyright-text {
+            margin-left: 10px;
+        }
+    }
+    .privacy-area {
+        font-size: 12px;
+        padding-bottom: 10px;
+        .privacy-text {
+            span {
+                margin: 10px;
+            }
+         }
+     }
+    .services {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 30px;
+        position: relative;
     .services-top {
         width: 100%;
         display: flex;
@@ -56,6 +189,7 @@
                     border-radius: 3px;
                     z-index: 99;
                 }
+               }
             }
             .service-card-bottom {
                 padding: 20px 0;
@@ -67,7 +201,8 @@
                     @include tablet {
                         font-size: 16px;
                     }
-                }
+                  }
+               }
                 p {
                     font-size: 16px;
                     color: getColor(color01);
@@ -98,4 +233,3 @@
             }
         }
     }
-}
