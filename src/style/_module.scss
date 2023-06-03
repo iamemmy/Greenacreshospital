@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,700;1,800&display=swap');
 
 * {
     margin: 0;
@@ -24,6 +24,11 @@ $colors:(
 );
 
 // Mixin
+@mixin mini-mobile{
+    @media (max-width: 490.1px){
+        @content;
+    }
+}
 @mixin mobile{
     @media (max-width: 660.1px){
         @content;
