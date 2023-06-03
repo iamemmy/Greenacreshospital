@@ -1,0 +1,173 @@
+.hmo-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 30px;
+    h3 {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 800;
+        color: getColor(color04);
+        text-align: center;
+        @include mobile {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+        @include mini-mobile {
+            font-size: 16px;
+        }
+    }
+    p {
+        font-size: 16px;
+        color: getColor(color01);
+        @include mini-mobile {
+            font-size: 15px;
+        }
+    }
+    div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        grid-template-areas: 
+        "a a b c c d e f"
+        "g h h i j k l l"
+        "m n o p q q r r";
+        @include tablet {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: initial;
+            grid-template-areas: initial;
+        }
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mini-mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        p {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 5px 10px;
+            border: 1px solid getColor(color06);
+            font-weight: 500;
+            font-size: 17px;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 1%) 0px 19px 38px, rgba(0, 0, 0, 10%) 0px 15px 12px;
+            @include mobile {
+                font-size: 15px;
+            }
+            &:first-child {
+                grid-area: a;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(2) {
+                grid-area: b;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(3) {
+                grid-area: c;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(4) {
+                grid-area: d;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(5) {
+                grid-area: e;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(6) {
+                grid-area: f;
+                @include tablet {
+                grid-area: initial;
+            }
+            }
+            &:nth-child(7) {
+                grid-area: g;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(8) {
+                grid-area: h;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(9) {
+                grid-area: i;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(10) {
+                grid-area: j;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(11) {
+                grid-area: k;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(12) {
+                grid-area: l;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(13) {
+                grid-area: m;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(14) {
+                grid-area: n;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(15) {
+                grid-area: o;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(16) {
+                grid-area: p;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(17) {
+                grid-area: q;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+            &:nth-child(18) {
+                grid-area: r;
+                @include tablet {
+                    grid-area: initial;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Intro from '../components/Intro';
 import Services from '../components/Services';
 import Appointment from '../components/Appointment';
 import Footer from '../components/Footer';
+import Accredit from '../components/Accredit';
 
 export default function Homepage() {
   return (
@@ -12,6 +13,7 @@ export default function Homepage() {
       <Hero />
       <Intro />
       <Services />
+      <Accredit />
       <Appointment />
       <Footer />
     </>

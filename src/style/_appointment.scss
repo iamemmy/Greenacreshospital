@@ -13,6 +13,9 @@
     @include tablet {
         flex-direction: column;
     }
+    @include mobile {
+        gap: 50px;
+    }
     .appointment-top {
         flex: 1;
         display: flex;
