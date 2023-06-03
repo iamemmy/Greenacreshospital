@@ -366,7 +366,7 @@
   }
 }
 .service-page .card-wrapper .card {
-  max-width: 450px;
+  margin: auto;
   border: none;
   height: -moz-fit-content;
   height: fit-content;
@@ -374,6 +374,7 @@
 }
 .service-page .card-wrapper .card img {
   width: 100%;
+  margin: auto;
   overflow: hidden;
   box-shadow: gray 4px 4px 4px;
   aspect-ratio: 4/4;
@@ -401,74 +402,4 @@
 .service-page .card-wrapper .card div .card-text {
   font-size: 18px;
   padding-top: 0;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  background-color: #0e270f;
-  text-align: center;
-}
-@media (max-width: 960.1px) {
-  footer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 660.1px) {
-  footer {
-    grid-template-columns: 1fr;
-  }
-}
-footer .logo-wrap {
-  max-width: 150px;
-  background-color: #ffffff;
-  margin: 50px auto;
-}
-footer .logo-wrap img {
-  width: 100%;
-}
-footer .gah h6 {
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-}
-footer .gah p {
-  margin: 8px;
-}
-footer .contact-us h5 {
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-}
-footer .contact-us p {
-  margin: 8px;
-}
-footer .info {
-  margin-bottom: 10px;
-  padding-bottom: 30px;
-}
-footer .info h6 {
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-}
-footer .info p {
-  margin: 5px;
-}
-footer .social-icons {
-  font-size: 12px;
-}
-footer .social-icons img {
-  width: 15px;
-  margin: 10px;
-}
-footer .social-icons .copyright-text {
-  margin-left: 10px;
-}
-footer .privacy-area {
-  font-size: 12px;
-  padding-bottom: 10px;
-}
-footer .privacy-area .privacy-text span {
-  margin: 10px;
 }/*# sourceMappingURL=main.css.map */
