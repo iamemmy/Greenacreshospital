@@ -1,11 +1,11 @@
-.services {
+.servicespage {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
     padding: 30px;
     position: relative;
-    .services-top {
+    .servicespage-top {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -34,7 +34,7 @@
             }
         }
     }
-    .services-bottom {
+    .servicespage-bottom {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -48,8 +48,8 @@
         @include mini-mobile {
             grid-template-columns: 1fr;
         }
-        .service-card {
-            .service-card-top {
+        .servicespage-card {
+            .servicespage-card-top {
                 width: 100%;
                 img {
                     width: 100%;
@@ -58,7 +58,7 @@
                 }
             }
             }
-            .service-card-bottom {
+            .servicespage-card-bottom {
                 padding: 20px 0;
                 h4 {
                     font-size: 18px;
@@ -77,25 +77,5 @@
                         font-size: 15px;
                     }
                 }
-    }
-    .services-view-all {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        a {
-            text-decoration: none;
-            background-color: transparent;
-            color: getColor(color04);
-            border: 1px solid getColor(color04);
-            padding: 15px 40px;
-            transition: all .3s ease;
-            @include mobile {
-                padding: 10px 20px;
-            }
-            &:hover {
-                background-color: getColor(color03);
-            }
-        }
     }
 }

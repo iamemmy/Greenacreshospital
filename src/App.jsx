@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepage from './pages/Homepage';
 import About from './pages/About';
-import Services from './pages/Services';
+import Servicespage from './pages/Servicespage';
 import Gallery from './pages/Gallery';
 import Logo from './assets/logo.png';
 import Hmo from "./pages/Hmo";
@@ -74,7 +74,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Servicespage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/hmo" element={<Hmo />} />
       </Routes>
