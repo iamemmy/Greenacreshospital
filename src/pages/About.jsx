@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/Footer'
 
 export default function About() {
+  const [showAbout, setShowAbout] = useState(false);
+
+  setTimeout(() => {
+    setShowAbout(true);
+  }, 1000)
+
   return (
     <>
-    <div className='about'>
+    <div className={showAbout ? 'about' : 'about delayPage'}>
         <h3>ABOUT GREEN ACRES HOSPITAL</h3>
         <p>
           At Green Acres Hospital ​, we pride ourselves on providing exceptional service to our patient. From check-in 

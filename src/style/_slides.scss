@@ -1,0 +1,5 @@
+.slide-main {
+    @include mobile {
+        display: none;
+    }
+}

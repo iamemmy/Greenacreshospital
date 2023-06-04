@@ -1,5 +1,4 @@
-@import "footer";
-.about {
+.gallery {
     width: 100%;
     padding: 30px;
     display: flex;
@@ -7,6 +6,7 @@
     justify-content: center;
     align-items: start;
     gap: 20px;
+    .gallery-top {
         h3 {
             width: 100%;
             font-size: 28px;
@@ -31,4 +31,34 @@
                 font-size: 15px;
             }
         }
+    }
+    .gallery-bottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+        div {
+            h4 {
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: getColor(color04);
+                @include tablet {
+                    font-size: 16px;
+                }
+            }
+            iframe {
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+    }
 }

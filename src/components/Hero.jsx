@@ -14,7 +14,7 @@ function Hero() {
         <h3>
           Health is wealth. Do not joke with your wellbeing. Book an appointment today!
         </h3>
-        <Link to="">Book Appointment</Link>
+        <Link href="tel:08106338579">Book Appointment</Link>
       </div>
 
       <Carousel className='carousel-wrap'>

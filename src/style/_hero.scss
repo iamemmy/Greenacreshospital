@@ -18,11 +18,13 @@
             color: getColor(color02);
             text-align: center;
             font-size: 40px;
+            font-weight: 800;
+            animation: fade-up .7s .4s backwards;
             @include tablet {
                 font-size: 28px;
             }
             @include mobile {
-                font-size: 24px;
+                font-size: 25px;
             }
         }
         a {
@@ -32,6 +34,7 @@
             padding: 20px 30px;
             text-decoration: none;
             transition: all .3s ease;
+            animation: fade-up .7s .6s backwards;
             &:hover {
                 border: 1px solid getColor(color01);
             }
@@ -51,7 +54,7 @@
         .carousel {
             height: 80vh;
             img {
-                aspect-ratio: 16/8;
+                aspect-ratio: 1/1;
                 width: 100%;
                 object-fit: cover;
                 @include mobile{

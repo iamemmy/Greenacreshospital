@@ -60,10 +60,10 @@ function App() {
               Gallery
             </Link>
           </div>
-          <Link href="" className="appointment-mobile">Book Appointment</Link>
+          <Link href="tel:08106338579" className="appointment-mobile">Book Appointment</Link>
         </div>
 
-        <Link href="" className="appointment">Book Appointment</Link>
+        <Link href="tel:08106338579" className="appointment">Book Appointment</Link>
 
         <div className={toggleNav ? "hamburger active" : "hamburger"} onClick={toggle}>
           <div className="line"></div>

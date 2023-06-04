@@ -17,6 +17,7 @@
             font-weight: 900;
             text-transform: uppercase;
             color: getColor(color04);
+            animation: fade-up .7s .4s backwards;
             @include mini-mobile {
                 font-size: 23px;
             }
@@ -26,6 +27,7 @@
             color: getColor(color01);
             text-align: center;
             width: 80%;
+            animation: fade-up .7s .6s backwards;
             @include tablet {
                 width: 90%;
             }
