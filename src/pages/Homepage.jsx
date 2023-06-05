@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Accredit from '../components/Accredit';
 import Slides from '../components/Slides';
 import Mobileslide from '../components/Mobileslide';
+import Manager from '../components/Manager';
 
 export default function Homepage() {
 
@@ -20,6 +21,7 @@ export default function Homepage() {
       <Appointment />
       <Slides />
       <Mobileslide />
+      <Manager />
       <Footer />
     </>
   )

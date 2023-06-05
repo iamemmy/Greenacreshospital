@@ -42,7 +42,10 @@ $colors:(
 
 //Utility classes
 .activeNav {
-    border-bottom: 1px solid getColor(color04);
+    border-bottom: 1px solid getColor(color02);
+    @include mobile {
+        border-bottom: 1px solid getColor(color04); 
+    }
 }
 .delayPage {
     visibility: hidden;

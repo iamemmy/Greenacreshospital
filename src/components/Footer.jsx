@@ -17,13 +17,13 @@ export default function Footer() {
                 <h3>Green Acres Hospital</h3>
                 <Link to="/about">About Us</Link>
                 <Link to="/services">Services</Link>
-                <Link href="tel:08106338579">Appointment</Link>
+                <Link to="tel:08106338579">Appointment</Link>
             </div>
             <div>
                 <h3>Contact Us</h3>
                 <Link href="tel:08106338579">Contact Us</Link>
                 <Link>Newsletter</Link>
-                <Link href="tel:08106338579">Feedback</Link>
+                <Link to="tel:08106338579">Feedback</Link>
             </div>
             <div>
                 <h3>Information</h3>
@@ -50,11 +50,11 @@ export default function Footer() {
             </div>
             <div className='footer-bottom-bottom'>
                 <div>
-                    <p>&copy; Green Acres Hospital 2023 - 2023. All Rights Reserved.</p>
+                    <p>&copy; Green Acres Hospital 2023. All Rights Reserved.</p>
                 </div>
                 <div>
                     <Link>&#9675; Privacy Policy</Link>
-                    <Link href="tel:08106338579">&#9675; Bookings  Appointment</Link>
+                    <Link to="tel:08106338579">&#9675; Bookings  Appointment</Link>
                     <Link to="/services">&#9675; Services</Link>
                 </div>
             </div>

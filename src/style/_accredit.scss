@@ -11,6 +11,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-top: 1px solid getColor(color06);
+    @include mobile {
+        border-radius: 20px 20px 0 0;
+        border-top: 1px solid getColor(color04);
+    }
     h3 {
         font-size: 28px;
         font-weight: 600;
@@ -27,15 +32,16 @@
     a {
         color: getColor(color01);
         background-color: getColor(color03);
-        border: 1px solid getColor(color02);
+        border: 1px solid getColor(color04);
         padding: 20px 30px;
         text-decoration: none;
         transition: all .3s ease;
+        border-radius: 5px;
         @include mobile {
             padding: 15px 25px;
         }
         &:hover {
-            border: 1px solid getColor(color01);
+            border: 1px solid getColor(color03);
             color: getColor(color01);
         }
     }

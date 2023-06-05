@@ -10,23 +10,18 @@
         h3 {
             width: 100%;
             font-size: 28px;
-            font-weight: 800;
+            font-weight: 900;
             color: getColor(color04);
             text-align: center;
-            animation: fade-up .7s .4s backwards;
-            @include mobile {
-                font-size: 22px;
-                font-weight: 600;
-                line-height: 40px;
-            }
+            animation: fade-up 1.7s .4s backwards;
             @include mini-mobile {
-                font-size: 18px;
+                font-size: 23px;
             }
         }
         p {
             font-size: 16px;
             color: getColor(color01);
-            animation: fade-up .7s .6s backwards;
+            animation: fade-up 1.7s .6s backwards;
             @include mini-mobile {
                 font-size: 15px;
             }

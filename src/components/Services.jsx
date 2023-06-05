@@ -1,17 +1,33 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Service1 from '../assets/img7.png';
 import Service2 from '../assets/img13.png';
 import Service3 from '../assets/img9.png';
 
 export default function Services() {
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
       <div className='services'>
 
         <div className='services-top'>
-          <h3>Our Services</h3>
-          <p>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-offset="50"
+          >Our Services</h3>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-offset="50"
+          >
             At Green Acres Hospital ​, we pride ourselves on providing exceptional service to our patient. 
             From check-in to check-out, our dedicated team is here to make sure you have a good experience 
             whenever you visit our hospital, we are passionate about our patients.

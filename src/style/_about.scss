@@ -7,28 +7,59 @@
     justify-content: center;
     align-items: start;
     gap: 20px;
-        h3 {
-            width: 100%;
-            font-size: 28px;
-            font-weight: 800;
-            color: getColor(color04);
-            text-align: center;
-            animation: fade-up .7s .4s backwards;
-            @include mobile {
-                font-size: 22px;
-                font-weight: 600;
-                line-height: 40px;
+    h3 {
+        font-size: 28px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: getColor(color04);
+        animation: fade-up 1.7s .4s backwards;
+        text-align: center;
+        width: 100%;
+        @include mini-mobile {
+            font-size: 23px;
+        }
+    }
+    p {
+        font-size: 16px;
+        color: getColor(color01);
+        animation: fade-up 1.7s .6s backwards;
+        @include mini-mobile {
+            font-size: 15px;
+        }
+    }
+    .about-bottom {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        @include tablet {
+            flex-direction: column;
+        }
+        div {
+            h4 {
+                font-size: 26px;
+                font-weight: 900;
+                text-transform: uppercase;
+                color: getColor(color04);
+                text-align: center;
+                width: 100%;
+                @include mini-mobile {
+                    font-size: 23px;
+                }
             }
-            @include mini-mobile {
-                font-size: 18px;
+            p {
+                font-size: 16px;
+                color: getColor(color01);
+                animation: fade-up 1.7s .6s backwards;
+                @include mini-mobile {
+                    font-size: 15px;
+                }
+            }
+            &:first-child {
+
+            }
+            &:nth-child(2) {
+
             }
         }
-        p {
-            font-size: 16px;
-            color: getColor(color01);
-            animation: fade-up .7s .6s backwards;
-            @include mini-mobile {
-                font-size: 15px;
-            }
-        }
+    }
 }

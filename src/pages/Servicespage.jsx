@@ -4,6 +4,7 @@ import Cardimg1 from '../assets/img7.png';
 import Cardimg2 from '../assets/img13.png';
 import Cardimg3 from '../assets/img9.png';
 import Cardimg4 from '../assets/img8.png';
+// import Cardimg5 from '../assets/img14.jpg';
 
 export default function Servicespage() {
 
@@ -79,6 +80,20 @@ export default function Servicespage() {
                         <p>
                             we offer a thorough physical examination; including  variety of tests depending on the 
                             age and sex and health of the person.
+                        </p>
+                    </div>
+                </div>
+                <div className='servicespage-card'>
+                    <div className='servicespage-card-top'>
+                        <img src={Cardimg4} alt="" />
+                    </div>
+                    <div className='servicespage-card-bottom'>
+                        <h4>SURGERY</h4>
+                        <p>
+                            The care of women during pregnancy and childbirth and in the diagnosis and treatment of 
+                            diseases of the female reproductive organs requires expert’s examination and we prioritize 
+                            on that. we also specializes in other women’s health issues, such as menopause, hormone problems, 
+                            contraception (birth control), and infertility.
                         </p>
                     </div>
                 </div>

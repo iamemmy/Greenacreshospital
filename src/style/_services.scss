@@ -90,6 +90,7 @@
             border: 1px solid getColor(color04);
             padding: 15px 40px;
             transition: all .3s ease;
+            border-radius: 5px;
             @include mobile {
                 padding: 10px 20px;
             }

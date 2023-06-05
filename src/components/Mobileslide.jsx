@@ -8,8 +8,6 @@ import Image2 from '../assets/slide2.jpg';
 import Image3 from '../assets/slide3.jpg';
 import Image4 from '../assets/slide4.jpg';
 import Image5 from '../assets/slide5.jpg';
-import Image6 from '../assets/slide6.jpg';
-import Image7 from '../assets/slide7.jpg';
 import Image8 from '../assets/slide8.jpg';
 import Image9 from '../assets/slide9.jpg';
 import Image10 from '../assets/slide10.jpg';
@@ -58,12 +56,6 @@ const Mobileslide = () => {
         </div>
         <div>
           <img src={Image5} alt="" />
-        </div>
-        <div>
-          <img src={Image6} alt="" />
-        </div>
-        <div>
-          <img src={Image7} alt="" />
         </div>
         <div>
           <img src={Image8} alt="" />

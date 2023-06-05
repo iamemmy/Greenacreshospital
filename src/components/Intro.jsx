@@ -1,19 +1,41 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Healthcare from '../assets/img6.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Intro() {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
   return (
     <div className='intro'>
         <div className='intro-top'>
             <img src={Healthcare} alt="" />
-            <h3>
+            <h3
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="50"
+            >
                 We deliver <span>premier and innovative</span> healthcare service
             </h3>
         </div>
         <div className='intro-bottom'>
             <div className='bottom-1'>
-                <h4>Emergency Case</h4>
-                <p>
+                <h4
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    data-aos-offset="50"
+                >Emergency Case</h4>
+                <p
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                    data-aos-offset="50"
+                >
                     Our Emergency and general Outpatient Department is staffed 24 hours a day, 365 days a year by experienced physicians and
                     qualified nurses. Our state-of-the-art department and caring staff is prepared to handle a wide range
                     of problems from minor illnesses to life-threatening events. We work toward prompt evaluation, with
@@ -21,8 +43,18 @@ export default function Intro() {
                 </p>
             </div>
             <div className='bottom-2'>
-                <h4>Service Hours</h4>
-                <table>
+                <h4
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    data-aos-offset="50"
+                >Service Hours</h4>
+                <table
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                    data-aos-offset="50"
+                >
                     <tr>
                         <td>Gynaecology</td>
                         <td>Mon - Sat</td>

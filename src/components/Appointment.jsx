@@ -15,14 +15,17 @@ export default function Appointment() {
                 If you are already a patient with us and would like to schedule an appointment with a doctor you have 
                 already seen, please contact your doctor’s office directly.
             </p>
-            <div className='appointment-form'>
+            <form 
+                target="_blank"
+                action="https://formsubmit.co/iamemmy5@gmail.com" method="POST"
+                className='appointment-form'>
                 <div>
-                    <input type="text" placeholder='Full Name' />
-                    <input type="number" placeholder='Phone Number' />
+                    <input type="text" name="name" placeholder='Full Name' />
+                    <input type="number" name="phone" placeholder='Phone Number' />
                 </div>
-                <textarea cols="30" rows="7" placeholder='Message'></textarea>
-                <button><img src={Send} alt="" />SEND</button>
-            </div>
+                <textarea cols="30" rows="7" name="message" placeholder='Message'></textarea>
+                <button type="submit"><img src={Send} alt="" />SEND</button>
+            </form>
         </div>
         <div className='appointment-bottom'>
             <h3>Visiting</h3>

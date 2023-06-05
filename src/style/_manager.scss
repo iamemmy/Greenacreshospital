@@ -1,0 +1,73 @@
+.manager {
+    width: 100%;
+    padding: 30px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    h3 {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: getColor(color04);
+        text-align: center;
+        @include mini-mobile {
+            font-size: 23px;
+        }
+    }
+    .manager-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include tablet {
+            align-items: start;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+        @include mini-mobile {
+            gap: 40px;
+        }
+        .manager-top {
+            flex: 1;
+            @include mobile {
+                margin: auto;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                border: 4px solid getColor(color04);
+                @include mobile {
+                    width: 320px;
+                    border: 3px solid getColor(color04);
+                }
+                @include mini-mobile {
+                    width: 220px;
+                    border: 2px solid getColor(color04);
+                }
+            }
+        }
+        .manager-bottom {
+            flex: 3;
+            padding-inline: 10px;
+            @include tablet {
+                flex: 2;
+            }
+            p {
+                font-size: 16px;
+                @include mobile {
+                    text-align: center;
+                }
+                span {
+                    font-weight: 600;
+                    color: getColor(color04);
+                }
+            }
+        }
+    }
+    
+}
