@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Service1 from '../assets/img7.png';
 import Service2 from '../assets/img13.png';
 import Service3 from '../assets/img9.png';
+import Service4 from '../assets/img19.jpg';
 
 export default function Services() {
 
@@ -28,9 +29,9 @@ export default function Services() {
             data-aos-delay="300"
             data-aos-offset="50"
           >
-            At Green Acres Hospital ​, we pride ourselves on providing exceptional service to our patient. 
-            From check-in to check-out, our dedicated team is here to make sure you have a good experience 
-            whenever you visit our hospital, we are passionate about our patients.
+            At Green Acres Hospital, we take pride in delivering exceptional services to our patients. 
+            From check-in to check-out, our dedicated team is committed to providing you with the best 
+            experience during every visit to our facility.
           </p>
         </div>
 
@@ -43,10 +44,9 @@ export default function Services() {
             <div className='service-card-bottom'>
               <h4>3D/4D Ultrasound scan</h4>
               <p>
-                Like regular ultrasounds, 3D and 4D ultrasounds use sound waves to create an image of your 
-                baby in your womb. What's different is that 3D ultrasounds create a three-dimensional image 
-                of your baby, while 4D ultrasounds create a live video effect, like a movie. You can watch 
-                your baby smile or yawn.
+                Our 3D/4D Ultrasound Scan service offers a more detailed survey of the embryo and fetus 
+                as well as evaluation of conditions such as uterine fibroids to provide best anatomical 
+                results to improve the doctors ability to make confident and informed decisions
               </p>
             </div>
           </div>
@@ -58,9 +58,9 @@ export default function Services() {
             <div className='service-card-bottom'>
               <h4>Laboratory services</h4>
               <p>
-                we offer a laboratory  facility that performs laboratory testing on specimens derived from 
-                humans to provide information for diagnosis, prevention or treatment of or impairment of 
-                disease, or for assessment of health.
+                Our state of the art medical laboratory is a facility dedicated to delivering prompt, thorough 
+                and accurate diagnostic services. Our team of highly skilled Medical Laboratory Scientists are 
+                devoted to delivering excellent care to our patients at all times.
               </p>
             </div>
           </div>
@@ -74,8 +74,22 @@ export default function Services() {
               <p>
                 The care of women during pregnancy and childbirth and in the diagnosis and treatment of 
                 diseases of the female reproductive organs requires expert’s examination and we prioritize 
-                on that. we also specializes in other women’s health issues, such as menopause, hormone problems, 
-                contraception (birth control), and infertility.
+                on that.
+              </p>
+            </div>
+          </div>
+
+          <div className='service-card'>
+            <div className='service-card-top'>
+              <img src={Service4} alt="" />
+            </div>
+            <div className='service-card-bottom'>
+              <h4>Surgery</h4>
+              <p>
+                At Green Acres Hospital, we prioritize patient safety, comfort, personalized care, and 
+                comprehensive post-operation support. Our highly skilled surgical team is dedicated to 
+                providing excellent surgical procedures and care to ensure a positive experience for every 
+                patient.
               </p>
             </div>
           </div>

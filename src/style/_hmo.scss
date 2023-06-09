@@ -5,6 +5,10 @@
     align-items: start;
     gap: 20px;
     padding: 30px;
+    margin-top: 100px;
+    @include mobile {
+        margin-top: 85px;
+    }
     h3 {
         width: 100%;
         font-size: 24px;

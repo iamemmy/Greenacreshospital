@@ -1,5 +1,7 @@
-import React, {useState} from 'react'
-import Footer from '../components/Footer'
+import React, {useState, useEffect} from 'react'
+import Footer from '../components/Footer';
+import Slides from '../components/Slides';
+import Mobileslide from '../components/Mobileslide';
 
 export default function Gallery() {
 
@@ -9,8 +11,12 @@ export default function Gallery() {
     setShowGallery(true);
   }, 1000)
 
+  useEffect(() => {
+    window.scroll(1, 0);
+  }, []);
+
   return (
-    <>
+    <React.Fragment>
       <div className={showGallery ? 'gallery' : 'gallery delayPage'}>
         <div className='gallery-top'>
           <h3>Let us show you around </h3>
@@ -24,23 +30,29 @@ export default function Gallery() {
         <div className='gallery-bottom'>
           <div>
             <h4>Our Compound and Reception</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tz3U0L62Xd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div>
             <h4>Our Theatre</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/g7oIQi_gY0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
           <div>
             <h4>Our Laboratory</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/eWZzF03YPlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
           <div>
             <h4>Our Labour Room</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TyvrSTDQhf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
           <div>
-            <h4>Our MD's Office</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/37PbZOuYfSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+            <h4>Our Offices</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
+      <Mobileslide />
+      <Slides />
       <Footer />
-    </>
+    </React.Fragment>
   )
 }

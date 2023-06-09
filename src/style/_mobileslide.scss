@@ -2,5 +2,21 @@
     display: none;
     @include mobile {
         display: block;
+        height: 43vh;
+        .carousel-root {
+            height: 43vh;
+            .carousel-slider {
+                height: 100%;
+                .slider-wrapper {
+                    height: 100%;
+                    ul {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @include mini-mobile {
+        height: 35vh;
     }
 }

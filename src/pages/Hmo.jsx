@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 export default function Hmo() {
 
   useEffect(() => {
-    window.scroll(1, 0);
+    window.scroll(0, 0);
   }, []);
 
   return (

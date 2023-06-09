@@ -1,8 +1,10 @@
 .hero {
     position: relative;
     height: 80vh;
+    margin-top: 100px;
     @include mobile {
         height: 70vh;
+        margin-top: 85px;
     }
     .hero-content {
         position: absolute;

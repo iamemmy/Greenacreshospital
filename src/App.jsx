@@ -6,6 +6,7 @@ import Servicespage from './pages/Servicespage';
 import Gallery from './pages/Gallery';
 import Logo from './assets/logo.png';
 import Hmo from "./pages/Hmo";
+import Faqs from "./pages/Faqs";
 import "./style/main.css";
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
         <Route path="/services" element={<Servicespage />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/hmo" element={<Hmo />} />
+        <Route path="/faqs" element={<Faqs />} />
       </Routes>
     </Router>
   )

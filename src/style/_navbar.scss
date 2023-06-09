@@ -1,9 +1,14 @@
 .navbar {
     width: 100%;
-    padding: 16px 40px !important;
+    padding: 14px 40px !important;
     background-color: getColor(color04);
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     @include mobile {
-        padding: 6px 40px 6px 30px !important;
+        padding: 4px 40px 4px 30px !important;
     }
     img {
         width: 80px;

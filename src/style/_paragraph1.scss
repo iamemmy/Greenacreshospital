@@ -1,0 +1,21 @@
+.paragraph1 {
+    flex: 3;
+    padding-inline: 10px;
+    @include tablet {
+        flex: 2;
+    }
+    p {
+        font-size: 16px;
+        @include mobile {
+            text-align: center;
+        }
+        span {
+            color: getColor(color01);
+        }
+        h5 {
+            font-size: 16px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

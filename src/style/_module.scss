@@ -24,6 +24,11 @@ $colors:(
 );
 
 // Mixin
+@mixin edge{
+    @media (max-width: 1920.1px){
+        @content;
+    }
+}
 @mixin mini-mobile{
     @media (max-width: 490.1px){
         @content;
@@ -50,6 +55,19 @@ $colors:(
 .delayPage {
     visibility: hidden;
 }
+.carousel-indicators {
+    display: none !important;
+}
+.slider {
+    @include edge {
+        height: 50vh;
+    }
+}
+// .full-text {
+//     overflow: hidden;
+//     max-height: 9999px;
+//     transition: max-height .3s ease-in;
+// }
 
 //Keyframes
 @keyframes fade-up {

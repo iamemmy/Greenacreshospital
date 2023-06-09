@@ -37,9 +37,10 @@
     .services-bottom {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         @include tablet {
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
         @include mobile {
