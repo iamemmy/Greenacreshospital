@@ -40,7 +40,7 @@ const Faqs = () => {
   return (
     <React.Fragment>
         <div className="accordion" id="accordionExample">
-        {renderAccordionItem(0, 'Is Green Acres Hospital HMO accredited?', 'we are HMO Accredited, Below is the list of the HMOs in our Hospital: Reliance, Venus, Hygeia, Bastion, Kennedia, Leadway,MB & O, Prowealth')}
+        {renderAccordionItem(0, 'Is Green Acres Hospital HMO accredited?', 'We are HMO Accredited, Below is the list of the HMOs in our Hospital: Reliance, Venus, Hygeia, Bastion, Kennedia, Leadway,MB & O, Pro-wealth')}
         {renderAccordionItem(1, 'Where is Green Acres Hospital located?', 'Green Acres Hospital is located in Sunnyvale Homes Estate, Lokogoma, Abuja.')}
         {renderAccordionItem(2, 'What services do you offer?', 'Green Acres Hospital offer premium services including but not limited to 3D/4D Ultrasound Scan service, laboratory services, Gynaecare clinic service, multi-specialty clinic, surgery and cervical cancer screening.')}
         {renderAccordionItem(3, 'How do I book an appointment', 'To book an appointment with us, kindly click on the BOOK APPOINTMENT button at the header of this website.')}

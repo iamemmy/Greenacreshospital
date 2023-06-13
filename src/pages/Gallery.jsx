@@ -34,18 +34,18 @@ export default function Gallery() {
           </div>
           <div>
             <h4>Our Theatre</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BBk8-YGXz0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div>
+            <h4>Our Consulting Room</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BgdzMfZ7CK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div>
             <h4>Our Laboratory</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L-e_jlL3stY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div>
             <h4>Our Labour Room</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div>
-            <h4>Our Offices</h4>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>

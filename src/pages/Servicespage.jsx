@@ -41,7 +41,7 @@ export default function Servicespage() {
                         <p>
                             Our 3D/4D Ultrasound Scan service offers a more detailed survey of the embryo and fetus 
                             as well as evaluation of conditions such as uterine fibroids to provide best anatomical 
-                            results to improve the doctors ability to make confident and informed decisions
+                            results to improve the doctors ability to make confident and informed decisions.
                         </p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function Servicespage() {
                         <p>
                             Our state of the art medical laboratory is a facility dedicated to delivering prompt, thorough 
                             and accurate diagnostic services. Our team of highly skilled Medical Laboratory Scientists are 
-                            devoted to delivering excellent care to our patients at all times.
+                            devoted to providing excellent care to our patients at all times.
                         </p>
                     </div>
                 </div>
@@ -108,9 +108,7 @@ export default function Servicespage() {
                         <p>
                             Our unique colposcopy practice offers evaluation for women who have had a positive cervical 
                             cancer screening test, either by Pap smear, liquid based cytology or Human Papilloma Virus 
-                            testing. Colposcopy offers a detailed evaluation of the cervix, allowing for samples to be 
-                            taken from any abnormal areas that may be seen during the colposcopic evaluation. <br />
-                            HPV vaccination is also available for eligible females.
+                            testing. HPV vaccination is also available for eligible females.
                         </p>
                     </div>
                 </div>

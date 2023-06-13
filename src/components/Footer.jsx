@@ -44,7 +44,7 @@ export default function Footer() {
                 <a href="">
                     <img src={Icon3} alt="" />
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=100063471673484">
                     <img src={Icon4} alt="" />
                 </a>
             </div>

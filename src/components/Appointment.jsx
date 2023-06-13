@@ -9,8 +9,7 @@ export default function Appointment() {
             <h3>Make An Appointment</h3>
             <p>
                 Are you new to Green Acres Hospital and looking for a doctor? Have you been to Green Acres Hospital 
-                but need to see a new specialist or primary care doctor? If yes, send us a mail and we’ll get started 
-                on finding a doctor who is right for you.
+                but need to see a new specialist or primary care doctor? If yes, submit the form below to get started.
                 <br /><br />
                 If you are already a patient with us and would like to schedule an appointment with a doctor you have 
                 already seen, please contact your doctor’s office directly.

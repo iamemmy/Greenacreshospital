@@ -1,6 +1,15 @@
 .accordion {
+    padding: 30px;
     margin-top: 100px;
     @include mobile {
         margin-top: 85px;
+    }
+    .accordion-item {
+        h2 {
+            button {
+                background: getColor(color07);
+                font-weight: 600;
+            }
+        }
     }
 }

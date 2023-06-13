@@ -30,6 +30,10 @@
             text-transform: uppercase;
             text-align: center;
             color: getColor(color02);
+            @include mobile {
+                width: 100%;
+                text-align: start;
+            }
             @include mini-mobile {
                 font-size: 23px;
             }
@@ -69,6 +73,7 @@
             }
             button {
                 border: 1px solid getColor(color04);
+                border-radius: 5px;
                 padding: 10px;
                 font-size: 18px;
                 background-color: getColor(color03);

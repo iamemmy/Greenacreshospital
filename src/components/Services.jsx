@@ -46,7 +46,7 @@ export default function Services() {
               <p>
                 Our 3D/4D Ultrasound Scan service offers a more detailed survey of the embryo and fetus 
                 as well as evaluation of conditions such as uterine fibroids to provide best anatomical 
-                results to improve the doctors ability to make confident and informed decisions
+                results to improve the doctors ability to make confident and informed decisions.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Services() {
               <p>
                 Our state of the art medical laboratory is a facility dedicated to delivering prompt, thorough 
                 and accurate diagnostic services. Our team of highly skilled Medical Laboratory Scientists are 
-                devoted to delivering excellent care to our patients at all times.
+                devoted to providing excellent care to our patients at all times.
               </p>
             </div>
           </div>
