@@ -45,8 +45,8 @@ export default function Gallery() {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/L-e_jlL3stY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div>
-            <h4>Our Labour Room</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h4>Our Labour Ward</h4>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qB50jSyBfN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>
