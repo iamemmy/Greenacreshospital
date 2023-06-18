@@ -1272,9 +1272,9 @@
   text-align: center;
   width: 100%;
 }
-@media (max-width: 490.1px) {
+@media (max-width: 660.1px) {
   .about .about-bottom div h4 {
-    font-size: 23px;
+    font-size: 17px;
   }
 }
 .about .about-bottom div p {
