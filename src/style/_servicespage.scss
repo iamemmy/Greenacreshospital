@@ -21,8 +21,9 @@
             text-transform: uppercase;
             color: getColor(color04);
             animation: fade-up 1.7s .4s backwards;
-            @include mini-mobile {
-                font-size: 23px;
+            @include mobile {
+                // text-align: start;
+                font-size: 17px;
             }
         }
         p {

@@ -19,8 +19,9 @@
         animation: fade-up 1.7s .4s backwards;
         text-align: center;
         width: 100%;
-        @include mini-mobile {
-            font-size: 23px;
+        @include mobile {
+            text-align: start;
+            font-size: 17px;
         }
     }
     p {
@@ -59,10 +60,10 @@
                 }
             }
             &:first-child {
-
+                flex: 1;
             }
             &:nth-child(2) {
-
+                flex: 1;
             }
         }
     }

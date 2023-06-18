@@ -30,7 +30,7 @@ export default function Gallery() {
         <div className='gallery-bottom'>
           <div>
             <h4>Our Compound and Reception</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKQs9bcLhQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sZrz517SLcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div>
             <h4>Our Theatre</h4>

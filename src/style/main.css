@@ -1238,9 +1238,10 @@
   text-align: center;
   width: 100%;
 }
-@media (max-width: 490.1px) {
+@media (max-width: 660.1px) {
   .about h3 {
-    font-size: 23px;
+    text-align: start;
+    font-size: 17px;
   }
 }
 .about p {
@@ -1286,6 +1287,13 @@
     font-size: 15px;
   }
 }
+.about .about-bottom div:first-child {
+  flex: 1;
+}
+.about .about-bottom div:nth-child(2) {
+  flex: 1;
+}
+
 .hmo-modal {
   display: flex;
   flex-direction: column;
@@ -1541,9 +1549,9 @@
   color: #0a460d;
   animation: fade-up 1.7s 0.4s backwards;
 }
-@media (max-width: 490.1px) {
+@media (max-width: 660.1px) {
   .servicespage .servicespage-top h3 {
-    font-size: 23px;
+    font-size: 17px;
   }
 }
 .servicespage .servicespage-top p {
@@ -1641,9 +1649,10 @@
   text-align: center;
   animation: fade-up 1.7s 0.4s backwards;
 }
-@media (max-width: 490.1px) {
+@media (max-width: 660.1px) {
   .gallery .gallery-top h3 {
-    font-size: 23px;
+    text-align: start;
+    font-size: 17px;
   }
 }
 .gallery .gallery-top p {
@@ -1683,6 +1692,11 @@
 @media (max-width: 960.1px) {
   .gallery .gallery-bottom div h4 {
     font-size: 16px;
+  }
+}
+@media (max-width: 660.1px) {
+  .gallery .gallery-bottom div h4 {
+    font-size: 14px;
   }
 }
 .gallery .gallery-bottom div iframe {
@@ -1863,4 +1877,30 @@
 .accordion .accordion-item h2 button {
   background: #f1f0f6;
   font-weight: 600;
+}
+
+.loader {
+  width: 100%;
+  height: 3px;
+  background-color: #ccc;
+  position: fixed;
+  top: 0%;
+  right: 0;
+  transform: translateX(100%);
+  animation: loaderAnimation 1s linear infinite;
+  border-radius: 20px;
+}
+@media (max-width: 660.1px) {
+  .loader {
+    height: 2px;
+  }
+}
+
+@keyframes loaderAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }/*# sourceMappingURL=main.css.map */

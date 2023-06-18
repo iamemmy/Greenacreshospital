@@ -18,8 +18,9 @@
             color: getColor(color04);
             text-align: center;
             animation: fade-up 1.7s .4s backwards;
-            @include mini-mobile {
-                font-size: 23px;
+            @include mobile {
+                text-align: start;
+                font-size: 17px;
             }
         }
         p {
@@ -52,6 +53,9 @@
                 color: getColor(color04);
                 @include tablet {
                     font-size: 16px;
+                }
+                @include mobile {
+                    font-size: 14px;
                 }
             }
             iframe {

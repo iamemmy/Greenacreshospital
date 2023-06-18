@@ -8,22 +8,29 @@ import Logo from './assets/logo.png';
 import Hmo from "./pages/Hmo";
 import Faqs from "./pages/Faqs";
 import "./style/main.css";
+import Loader from "./components/Loader";
 
 function App() {
   const [activeNavItem, setActiveNavItem] = useState('Home');
   const [toggleNav, setToggleNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const navItemClick = (navItem) => {
     setActiveNavItem(navItem);
     setIsOpen(false);
     setToggleNav(false);
+    setIsLoading(true);
   };
 
   const toggle = () => {
     setToggleNav(!toggleNav);
     setIsOpen(!isOpen);
   };
+
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 1000);
 
   return (
     <Router>
@@ -71,6 +78,11 @@ function App() {
           <div className="line"></div>
           <div className="line"></div>
         </div>
+
+        <Loader 
+          className="loader"
+          isLoading={isLoading}
+        />
       </nav>
       <Routes>
         <Route path="/" element={<Homepage />} />
