@@ -39,11 +39,34 @@
             font-weight: 800;
             text-align: center;
             @include mobile {
-                font-size: 21px;
+                font-size: 18px;
+                text-align: start;
+                font-weight: 500;
             }
             span {
                 color: getColor(color04);
-                font-style: italic;
+            }
+        }
+    }
+    .intro-about {
+        h3 {
+            width: 100%;
+            text-align: start;
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #0a460d;
+            @include mobile {
+                font-size: 21px;
+                font-weight: 800;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: getColor(color01);
+            animation: fade-up 1.7s .6s backwards;
+            @include mini-mobile {
+                font-size: 15px;
             }
         }
     }

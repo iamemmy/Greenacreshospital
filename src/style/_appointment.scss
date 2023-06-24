@@ -25,10 +25,11 @@
         gap: 20px;
         width: 100%;
         h3 {
+            width: 100%;
             font-size: 28px;
             font-weight: 900;
             text-transform: uppercase;
-            text-align: center;
+            text-align: start;
             color: getColor(color02);
             @include mobile {
                 width: 100%;

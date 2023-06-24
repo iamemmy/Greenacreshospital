@@ -19,8 +19,17 @@ export default function Intro() {
                 data-aos-delay="200"
                 data-aos-offset="50"
             >
-                We deliver <span>premier and innovative</span> healthcare service
+                Welcome To <span>Green Acres Hospital</span>
             </h3>
+        </div>
+        <div className='intro-about'>
+            <h3>We deliver premier and innovative healthcare service</h3>
+            <p>
+                We pride ourselves in our professionalism, delivered in a conducive and ambient environment, supported by 
+                cutting-edge technology to provide the best possible medical care to our esteemed clients. We consider it a 
+                privilege to be entrusted with the confidence of our numerous clients and will go the extra mile to deliver 
+                personalized warm and friendly professional service.
+            </p>
         </div>
         <div className='intro-bottom'>
             <div className='bottom-1'>

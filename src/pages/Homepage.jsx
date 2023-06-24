@@ -8,7 +8,8 @@ import Footer from '../components/Footer';
 import Accredit from '../components/Accredit';
 import Slides from '../components/Slides';
 import Mobileslide from '../components/Mobileslide';
-import Manager from '../components/Manager';
+import Faqs from '../components/Faqs';
+import Reviews from '../components/Reviews';
 
 export default function Homepage() {
 
@@ -19,9 +20,10 @@ export default function Homepage() {
       <Services />
       <Accredit />
       <Appointment />
+      <Reviews />
       <Slides />
       <Mobileslide />
-      <Manager />
+      <Faqs />
       <Footer />
     </>
   )

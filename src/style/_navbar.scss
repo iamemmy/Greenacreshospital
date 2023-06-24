@@ -10,8 +10,10 @@
     @include mobile {
         padding: 4px 40px 4px 30px !important;
     }
-    img {
-        width: 80px;
+    a {
+        img {
+            width: 80px;
+        }
     }
     .menu-wrap {
         display: flex;

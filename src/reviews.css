@@ -1,0 +1,124 @@
+.testimonial-cover{
+    padding: 0 100px;
+    background-color: #ECF2FF;
+}
+
+.testimonial-cover .slick-next::before,
+.testimonial-cover .slick-prev::before
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: transparent;
+}
+
+.testimonial-cover h3 {
+    width: 100%;
+    text-align: start;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #0a460d;
+    padding-top: 30px;
+}
+
+.slick-dots {
+    position: absolute !important;
+    bottom: 20px !important;
+}
+
+.testimonial-wrapper {
+    padding: 30px 60px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.testimonial-wrapper .each-testimonial {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+}
+.testimonial-wrapper .each-testimonial .testimonial-author {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    border: 10px solid var(--purple-light);
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.testimonial-wrapper .each-testimonial .testimonial-author img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.testimonial-wrapper .each-testimonial .testimonial-text {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.testimonial-wrapper .each-testimonial .testimonial-text img {
+    width: 55px;
+}
+.testimonial-wrapper .each-testimonial .testimonial-text div {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding-left: 55px;
+}
+.testimonial-wrapper .each-testimonial .testimonial-text div .description {
+    font-size: 20px;
+}
+.testimonial-wrapper .each-testimonial .testimonial-text div .author-name {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+@media  (max-width: 768px) {
+    .testimonial-wrapper .each-testimonial .testimonial-text {
+        text-align: center;
+    }
+    .testimonial-wrapper .each-testimonial .testimonial-text div .description {
+        font-size: 16px;
+    }
+    .testimonial-cover{
+        padding: 0 9%;
+    }
+    .testimonial-wrapper .each-testimonial {
+        grid-template-columns: 1fr ;
+        gap: 10px;
+    }
+    .testimonial-wrapper {
+        padding: 0;
+    }
+    
+    .testimonial-cover  .slick-prev, 
+    .testimonial-cover  .slick-next {
+        top: 94% !important;
+    }
+    .testimonial-cover  .slick-prev{
+        left: 25% !important;
+    }
+    .testimonial-cover  .slick-next{
+        right: 25% !important;
+    }
+    .testimonial-cover h3 {
+        font-size: 18px;
+    }
+    .testimonial-wrapper .each-testimonial .testimonial-text img {
+        width: 33px;
+    }
+    .testimonial-wrapper .each-testimonial .testimonial-text div {
+       padding: 10px 0 !important;
+    }
+    .slick-dots {
+        position: absolute !important;
+        bottom: 20px !important;
+    }
+
+}

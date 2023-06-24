@@ -6,7 +6,7 @@ import Servicespage from './pages/Servicespage';
 import Gallery from './pages/Gallery';
 import Logo from './assets/logo.png';
 import Hmo from "./pages/Hmo";
-import Faqs from "./pages/Faqs";
+import Faqs from "./components/Faqs";
 import "./style/main.css";
 import Loader from "./components/Loader";
 
@@ -35,7 +35,9 @@ function App() {
   return (
     <Router>
       <nav className="navbar">
-        <img src={Logo} alt="" />
+        <Link to="/">
+          <img src={Logo} alt="" />
+        </Link>
 
         <div className={isOpen ? "menu-wrap show" : "menu-wrap"}>
           <div className="menu">

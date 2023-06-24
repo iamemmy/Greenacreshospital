@@ -1,6 +1,6 @@
 .manager {
     width: 100%;
-    padding: 30px;
+    padding: 0;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -11,13 +11,14 @@
         margin-top: 15px;
     }
     h3 {
-        font-size: 28px;
-        font-weight: 800;
+        font-size: 26px;
+        font-weight: 900;
         text-transform: uppercase;
         color: getColor(color04);
         text-align: center;
-        @include mini-mobile {
-            font-size: 23px;
+        width: 100%;
+        @include mobile {
+            font-size: 17px;
         }
     }
     .manager-content {
@@ -76,7 +77,18 @@
                     font-weight: 600;
                     font-style: italic;
                     color: getColor(color05);
-                    text-align: center;
+                    text-align: start;
+                }
+            }
+        }
+        .paragraph1 {
+            p {
+                text-align: start;
+                font-size: 16px;
+                color: getColor(color01);
+                animation: fade-up 1.7s .6s backwards;
+                @include mini-mobile {
+                    font-size: 15px;
                 }
             }
         }

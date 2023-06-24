@@ -13,19 +13,21 @@
         align-items: center;
         gap: 10px;
         h3 {
+            width: 100%;
+            text-align: start;
             font-size: 28px;
             font-weight: 900;
             text-transform: uppercase;
             color: getColor(color04);
             @include mini-mobile {
-                font-size: 23px;
+                font-size: 18px;
             }
         }
         p {
+            width: 100%;
             font-size: 16px;
             color: getColor(color01);
-            text-align: center;
-            width: 80%;
+            text-align: start;
             @include tablet {
                 width: 90%;
             }

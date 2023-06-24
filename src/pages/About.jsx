@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import Manager from '../components/Manager';
 
 export default function About() {
   const [showAbout, setShowAbout] = useState(false);
@@ -56,6 +57,7 @@ export default function About() {
             </p>
           </div>
         </div>
+        <Manager />
       </div>
     <Footer />
     </React.Fragment>

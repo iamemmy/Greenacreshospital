@@ -54,7 +54,7 @@
     padding: 4px 40px 4px 30px !important;
   }
 }
-.navbar img {
+.navbar a img {
   width: 80px;
 }
 .navbar .menu-wrap {
@@ -316,12 +316,37 @@
 }
 @media (max-width: 660.1px) {
   .intro .intro-top h3 {
-    font-size: 21px;
+    font-size: 18px;
+    text-align: start;
+    font-weight: 500;
   }
 }
 .intro .intro-top h3 span {
   color: #0a460d;
-  font-style: italic;
+}
+.intro .intro-about h3 {
+  width: 100%;
+  text-align: start;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a460d;
+}
+@media (max-width: 660.1px) {
+  .intro .intro-about h3 {
+    font-size: 21px;
+    font-weight: 800;
+  }
+}
+.intro .intro-about p {
+  font-size: 16px;
+  color: #000000;
+  animation: fade-up 1.7s 0.6s backwards;
+}
+@media (max-width: 490.1px) {
+  .intro .intro-about p {
+    font-size: 15px;
+  }
 }
 .intro .intro-bottom {
   display: flex;
@@ -411,6 +436,8 @@
   gap: 10px;
 }
 .services .services-top h3 {
+  width: 100%;
+  text-align: start;
   font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
@@ -418,14 +445,14 @@
 }
 @media (max-width: 490.1px) {
   .services .services-top h3 {
-    font-size: 23px;
+    font-size: 18px;
   }
 }
 .services .services-top p {
+  width: 100%;
   font-size: 16px;
   color: #000000;
-  text-align: center;
-  width: 80%;
+  text-align: start;
 }
 @media (max-width: 960.1px) {
   .services .services-top p {
@@ -603,10 +630,11 @@
   width: 100%;
 }
 .appointment-2 .appointment-top h3 {
+  width: 100%;
   font-size: 28px;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
   color: #ffffff;
 }
 @media (max-width: 660.1px) {
@@ -1739,7 +1767,7 @@
 
 .manager {
   width: 100%;
-  padding: 30px;
+  padding: 0;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -1753,15 +1781,16 @@
   }
 }
 .manager h3 {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 900;
   text-transform: uppercase;
   color: #0a460d;
   text-align: center;
+  width: 100%;
 }
-@media (max-width: 490.1px) {
+@media (max-width: 660.1px) {
   .manager h3 {
-    font-size: 23px;
+    font-size: 17px;
   }
 }
 .manager .manager-content {
@@ -1836,7 +1865,18 @@
   font-weight: 600;
   font-style: italic;
   color: #808080;
-  text-align: center;
+  text-align: start;
+}
+.manager .manager-content .paragraph1 p {
+  text-align: start;
+  font-size: 16px;
+  color: #000000;
+  animation: fade-up 1.7s 0.6s backwards;
+}
+@media (max-width: 490.1px) {
+  .manager .manager-content .paragraph1 p {
+    font-size: 15px;
+  }
 }
 
 .paragraph1 {
@@ -1865,18 +1905,30 @@
   cursor: pointer;
 }
 
-.accordion {
+.faqs {
   padding: 30px;
-  margin-top: 100px;
 }
 @media (max-width: 660.1px) {
-  .accordion {
-    margin-top: 85px;
+  .faqs {
+    margin-top: 60px;
   }
 }
-.accordion .accordion-item h2 button {
+.faqs h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a460d;
+}
+@media (max-width: 490.1px) {
+  .faqs h3 {
+    font-size: 18px;
+  }
+}
+.faqs .accordion .accordion-item h2 button {
   background: #f1f0f6;
-  font-weight: 600;
+  color: #000000;
+  font-weight: 500;
 }
 
 .loader {

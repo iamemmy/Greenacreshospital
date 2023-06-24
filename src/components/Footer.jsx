@@ -29,7 +29,7 @@ export default function Footer() {
                 <h3>Information</h3>
                 <Link to="https://www.facebook.com/profile.php?id=100063471673484">Health & Safety</Link>
                 <Link>Accessibility</Link>
-                <Link to="/faqs">FAQs</Link>
+                <Link to="/">FAQs</Link>
             </div>
         </div>
 
