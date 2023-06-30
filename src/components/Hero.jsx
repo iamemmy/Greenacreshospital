@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
-import Img1 from '../assets/img15.jpg';
-import Img2 from '../assets/img16.jpg';
-import Img3 from '../assets/img17.jpg';
-import Img4 from '../assets/img18.jpg';
+import Img1 from '../assets/hero1.jpg';
+import Img2 from '../assets/hero2.jpg';
+import Img3 from '../assets/hero3.jpg';
+import Img4 from '../assets/hero4.jpg';
 import "../style/main.css";
 
 function Hero() {

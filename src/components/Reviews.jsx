@@ -1,7 +1,7 @@
 import React from "react";
-import test1 from "../assets/img1.png";
-import test2 from "../assets/img1.png";
-import test3 from "../assets/img1.png";
+import test1 from "../assets/review.jpg";
+import test2 from "../assets/review.jpg";
+import test3 from "../assets/review.jpg";
 import quote from "../assets/quote.png";
 import '../reviews.css';
 
@@ -33,22 +33,22 @@ export default function Testimonial() {
     {
       id: 1,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis obcaecati ducimus sint, in maiores corrupti earum nostrum voluptatum quis? sit amet consectetur adipisicing elit. Officiis facilis obcaecati ",
-      author: "Johnny Anderson",
+        "The multiuniquiness of staff. All your staff work effortlessly and in synchrony to make me comfortable while I was at your facility. ",
+      author: "A. A. Aliu",
       image: test1,
     },
     {
       id: 2,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis obcaecati ducimus sint, in maiores corrupti earum nostrum voluptatum quis? sit amet consectetur adipisicing elit. Officiis facilis obcaecati ",
-      author: "Mary Anderson",
+        "Customer service is superb. Always someone present to answer the phone in well detailed and comforting manner. ",
+      author: "Igbokwe",
       image: test2,
     },
     {
       id: 3,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis obcaecati ducimus sint, in maiores corrupti earum nostrum voluptatum quis? sit amet consectetur adipisicing elit. Officiis facilis obcaecati ",
-      author: "Samuel Anderson",
+        "The staffs are well mannered, also the welcome is friendly. Also I like their approach to emergency. ",
+      author: "Agunloye Ayodele",
       image: test3,
     },
   ];

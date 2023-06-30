@@ -2,10 +2,11 @@ import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Service1 from '../assets/img7.png';
-import Service2 from '../assets/img13.png';
-import Service3 from '../assets/img9.png';
-import Service4 from '../assets/img19.jpg';
+import Serv1 from '../assets/serv1.png';
+import Serv2 from '../assets/serv2.png';
+import Serv3 from '../assets/serv3.png';
+import Serv4 from '../assets/serv4.png';
+import Servimg from '../assets/hero1.jpg';
 
 export default function Services() {
 
@@ -36,62 +37,75 @@ export default function Services() {
         </div>
 
         <div className='services-bottom'>
+          <div className='service-card-wrap'>
 
-          <div className='service-card'>
-            <div className='service-card-top'>
-              <img src={Service3} alt="" />
+            <div 
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+              data-aos-offset="50"
+              className='service-card'
+            >
+              <div className='service-card-img'>
+                <img src={Serv4} alt="" />
+              </div>
+              <div className='service-card-content'>
+                <h4>3D/4D ULTRASOUND SCAN</h4>
+                <p>committed to providing you with the best experience during every visit to our facility.</p>
+              </div>
             </div>
-            <div className='service-card-bottom'>
-              <h4>3D/4D Ultrasound scan</h4>
-              <p>
-                Our 3D/4D Ultrasound Scan service offers a more detailed survey of the embryo and fetus 
-                as well as evaluation of conditions such as uterine fibroids to provide best anatomical 
-                results to improve the doctors ability to make confident and informed decisions.
-              </p>
+
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+              data-aos-offset="50"
+              className='service-card'
+            >
+              <div className='service-card-img'>
+                <img src={Serv3} alt="" />
+              </div>
+              <div className='service-card-content'>
+                <h4>LABORATORY SERVICE</h4>
+                <p>committed to providing you with the best experience during every visit to our facility.</p>
+              </div>
             </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+              data-aos-offset="50"
+              className='service-card'
+            >
+              <div className='service-card-img'>
+                <img src={Serv2} alt="" />
+              </div>
+              <div className='service-card-content'>
+                <h4>OBSTETRICS SERVICE</h4>
+                <p>committed to providing you with the best experience during every visit to our facility.</p>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+              data-aos-offset="50"
+              className='service-card'
+            >
+              <div className='service-card-img'>
+                <img src={Serv1} alt="" />
+              </div>
+              <div className='service-card-content'>
+                <h4>SURGERY</h4>
+                <p>committed to providing you with the best experience during every visit to our facility.</p>
+              </div>
+            </div>
+
           </div>
-
-          <div className='service-card'>
-            <div className='service-card-top'>
-              <img src={Service1} alt="" />
-            </div>
-            <div className='service-card-bottom'>
-              <h4>Laboratory services</h4>
-              <p>
-                Our state of the art medical laboratory is a facility dedicated to delivering prompt, thorough 
-                and accurate diagnostic services. Our team of highly skilled Medical Laboratory Scientists are 
-                devoted to providing excellent care to our patients at all times.
-              </p>
-            </div>
-          </div>
-
-          <div className='service-card'>
-            <div className='service-card-top'>
-              <img src={Service2} alt="" />
-            </div>
-            <div className='service-card-bottom'>
-              <h4>Obstetrics and Gynaecare clinic service</h4>
-              <p>
-                The care of women during pregnancy and childbirth and in the diagnosis and treatment of 
-                diseases of the female reproductive organs requires expert’s examination and we prioritize 
-                on that.
-              </p>
-            </div>
-          </div>
-
-          <div className='service-card'>
-            <div className='service-card-top'>
-              <img src={Service4} alt="" />
-            </div>
-            <div className='service-card-bottom'>
-              <h4>Surgery</h4>
-              <p>
-                At Green Acres Hospital, we prioritize patient safety, comfort, personalized care, and 
-                comprehensive post-operation support. Our highly skilled surgical team is dedicated to 
-                providing excellent surgical procedures and care to ensure a positive experience for every 
-                patient.
-              </p>
-            </div>
+          <div className='service-main-img'>
+            <img src={Servimg} />
           </div>
         </div>
         

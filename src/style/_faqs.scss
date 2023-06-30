@@ -1,7 +1,12 @@
 .faqs {
     padding: 30px;
-    @include mobile {
-        margin-top: 60px;
+    hr {
+        width: 20%;
+        margin: auto;
+        margin-bottom: 30px;
+        @include mobile {
+            width: 40%;
+        }
     }
     h3 {
         margin-bottom: 20px;

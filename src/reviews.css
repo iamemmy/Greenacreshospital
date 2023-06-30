@@ -1,6 +1,6 @@
 .testimonial-cover{
-    padding: 0 100px;
-    background-color: #ECF2FF;
+    padding: 30px;
+    background-color: #FFFFFF;
 }
 
 .testimonial-cover .slick-next::before,
@@ -119,6 +119,9 @@
     .slick-dots {
         position: absolute !important;
         bottom: 20px !important;
+    }
+    .testimonial-wrapper .each-testimonial .testimonial-author {
+        display: none;
     }
 
 }

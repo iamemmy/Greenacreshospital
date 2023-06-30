@@ -37,49 +37,76 @@
         }
     }
     .services-bottom {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        @include tablet {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
+        display: flex;
+        gap: 20px;
         @include mobile {
-            grid-template-columns: repeat(2, 1fr);
+            flex-direction: column-reverse;
         }
-        @include mini-mobile {
-            grid-template-columns: 1fr;
-        }
-        .service-card {
-            .service-card-top {
-                width: 100%;
-                img {
-                    width: 100%;
-                    border-radius: 3px;
-                    z-index: 99;
+        .service-card-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            .service-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                border: 2px solid getColor(color01);
+                border-radius: 3px;
+                @include mobile {
+                    border: 1px solid getColor(color01);
                 }
-            }
-            }
-            .service-card-bottom {
-                padding: 20px 0;
-                h4 {
-                    font-size: 18px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    color: getColor(color04);
+                .service-card-img {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     @include tablet {
+                        padding: 5px;
+                    }
+                    img {
+                        width: 80px;
+                        margin: auto;
+                        @include tablet {
+                            width: 60px;
+                        }
+                        @include mobile {
+                            width: 50px;
+                        }
+                    }
+                }
+                .service-card-content {
+                    flex: 5;
+                    padding: 5px;
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: getColor(color04);
+                        @include tablet {
+                            font-size: 16px;
+                        }
+                    }
+                    p {
                         font-size: 16px;
+                        color: getColor(color01);
+                        @include tablet {
+                            font-size: 15px;
+                        }
                     }
                 }
             }
-                p {
-                    font-size: 16px;
-                    color: getColor(color01);
-                    @include tablet {
-                        font-size: 15px;
-                    }
-                }
+        }
+        .service-main-img {
+            flex: 1;
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 3px;
+            }
+        }
     }
     .services-view-all {
         width: 100%;
@@ -96,6 +123,10 @@
             border-radius: 5px;
             @include mobile {
                 padding: 10px 20px;
+                border: none;
+                &:hover {
+                    background-color: transparent;
+                }
             }
             &:hover {
                 background-color: getColor(color03);

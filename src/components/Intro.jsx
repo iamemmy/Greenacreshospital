@@ -23,12 +23,20 @@ export default function Intro() {
             </h3>
         </div>
         <div className='intro-about'>
-            <h3>We deliver premier and innovative healthcare service</h3>
-            <p>
+            <h3
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+                data-aos-offset="50"
+            >We deliver premier and innovative healthcare service</h3>
+            <p
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-offset="50"
+            >
                 We pride ourselves in our professionalism, delivered in a conducive and ambient environment, supported by 
-                cutting-edge technology to provide the best possible medical care to our esteemed clients. We consider it a 
-                privilege to be entrusted with the confidence of our numerous clients and will go the extra mile to deliver 
-                personalized warm and friendly professional service.
+                cutting-edge technology to provide the best possible medical care to our esteemed clients.
             </p>
         </div>
         <div className='intro-bottom'>
@@ -36,13 +44,13 @@ export default function Intro() {
                 <h4
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="200"
+                    data-aos-delay="350"
                     data-aos-offset="50"
                 >Emergency Case</h4>
                 <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="300"
+                    data-aos-delay="400"
                     data-aos-offset="50"
                 >
                     Our Emergency and general Outpatient Department is staffed 24 hours a day, 365 days a year by experienced physicians and

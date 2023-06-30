@@ -39,6 +39,7 @@ const Faqs = () => {
   return (
     <React.Fragment>
         <div className='faqs'>
+          <hr />
           <h3>Frequently Asked Questions</h3>
           <div className="accordion" id="accordionExample">
           {renderAccordionItem(0, 'Is Green Acres Hospital HMO accredited?', 'We are HMO Accredited, Below is the list of the HMOs in our Hospital: Reliance, Venus, Hygeia, Bastion, Kennedia, Leadway,MB & O, Pro-wealth')}

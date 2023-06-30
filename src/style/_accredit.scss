@@ -13,14 +13,18 @@
     background-position: center;
     border-top: 1px solid getColor(color06);
     @include mobile {
-        border-radius: 20px 20px 0 0;
-        border-top: 1px solid getColor(color04);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
     }
     h3 {
         font-size: 28px;
         font-weight: 600;
         color: getColor(color04);
         text-align: center;
+        font-weight: 800;
         @include mobile {
             font-size: 23px;
             line-height: 40px;
@@ -37,6 +41,7 @@
         text-decoration: none;
         transition: all .3s ease;
         border-radius: 5px;
+        font-weight: 700;
         @include mobile {
             padding: 15px 25px;
         }
