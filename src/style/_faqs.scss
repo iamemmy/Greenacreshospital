@@ -22,9 +22,14 @@
         .accordion-item {
             h2 {
                 button {
-                    background: getColor(color07);
+                    background: transparent;
                     color: getColor(color01);
                     font-weight: 500;
+                }
+            }
+            .accordion-collapse {
+                .accordion-body {
+                    color: getColor(color07);
                 }
             }
         }

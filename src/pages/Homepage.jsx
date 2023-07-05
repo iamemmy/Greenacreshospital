@@ -8,6 +8,9 @@ import Footer from '../components/Footer';
 import Accredit from '../components/Accredit';
 import Faqs from '../components/Faqs';
 import Reviews from '../components/Reviews';
+import Emergency from '../components/Emergency';
+import Choose from '../components/Choose';
+import Homeabout from '../components/Homeabout';
 
 export default function Homepage() {
 
@@ -15,7 +18,10 @@ export default function Homepage() {
     <>
       <Hero />
       <Intro />
+      <Choose />
+      <Homeabout />
       <Services />
+      <Emergency />
       <Accredit />
       <Appointment />
       <Reviews />

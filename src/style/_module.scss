@@ -16,17 +16,22 @@
 //Variable
 $colors:(
     color01: #000000,
-    color02: #ffffff,
-    color03: #9dffa7,
-    color04: #0a460d,
-    color05: #808080,
+    color02: #FFFFFF,
+    color03: #7895CB,
+    color04: #4A55A2,
+    color05: #6C757D,
     color06: #dddddd,
-    color07: #f1f0f6
+    color07: #616161
 );
 
 // Mixin
 @mixin edge{
     @media (max-width: 1920.1px){
+        @content;
+    }
+}
+@mixin default{
+    @media (max-width: 1400.1px){
         @content;
     }
 }

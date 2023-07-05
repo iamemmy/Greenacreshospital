@@ -1,0 +1,66 @@
+.intro-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 40px;
+    border-top: 1px solid getColor(color06);
+    @include tablet {
+        flex-direction: column;
+        align-items: start;
+    }
+    .bottom-1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        h4 {
+            font-size: 19px;
+            color: getColor(color04);
+            font-weight: 600;
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: getColor(color07);
+        }
+    }
+    .bottom-2 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        @include tablet {
+            width: 100%;
+        }
+        h4 {
+            font-size: 19px;
+            color: getColor(color04);
+            font-weight: 600;
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            tr {
+                &:nth-child(even) {
+                    background-color: getColor(color06);
+                }
+                td {
+                    border: 1px solid getColor(color05);
+                    font-size: 15px;
+                    color: getColor(color01);
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

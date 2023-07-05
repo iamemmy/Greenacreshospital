@@ -15,7 +15,10 @@ function Hero() {
         <h3>
           Welcome to a world of Excellent healthcare
         </h3>
-        <Link to="tel:08106338579">Book Appointment</Link>
+        <div className='hero-cta'>
+          <Link to="tel:08106338579">Book Appointment</Link>
+          <Link to="tel:08106338579">Learn More</Link>
+        </div>
       </div>
 
       <Carousel className='carousel-wrap'>

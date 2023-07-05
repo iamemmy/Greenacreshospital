@@ -1,6 +1,6 @@
 .testimonial-cover{
     padding: 30px;
-    background-color: #FFFFFF;
+    background-color: #7895CB;
 }
 
 .testimonial-cover .slick-next::before,
@@ -19,13 +19,14 @@
     font-size: 28px;
     font-weight: 900;
     text-transform: uppercase;
-    color: #0a460d;
+    color: #FFFFFF;
     padding-top: 30px;
 }
 
 .slick-dots {
     position: absolute !important;
     bottom: 20px !important;
+    display: none !important;
 }
 
 .testimonial-wrapper {
@@ -44,7 +45,6 @@
     height: 180px;
     object-fit: cover;
     object-position: top;
-    border: 10px solid var(--purple-light);
     border-radius: 50%;
     overflow: hidden;
     display: block;
@@ -73,10 +73,12 @@
 }
 .testimonial-wrapper .each-testimonial .testimonial-text div .description {
     font-size: 20px;
+    color: #FFFFFF;
 }
 .testimonial-wrapper .each-testimonial .testimonial-text div .author-name {
     font-size: 19px;
     font-weight: bold;
+    color: #FFFFFF;
 }
 
 @media  (max-width: 768px) {
@@ -123,5 +125,52 @@
     .testimonial-wrapper .each-testimonial .testimonial-author {
         display: none;
     }
+    /* LAST ADDED */
+    .testimonial-cover{
+        height: 50vh !important;
+    }
+    .testimonial-cover .slick-slider {
+        height: 40vh !important;
+    }
+    .testimonial-cover .slick-list {
+        height: 40vh !important;
+    }
 
+}
+
+/* EDGE */
+@media  (max-width: 1920.1px) {
+    .testimonial-cover{
+        height: 45vh;
+    }
+    .testimonial-cover .slick-slider {
+        height: 35vh;
+    }
+    .testimonial-cover .slick-list {
+        height: 35vh;
+    }
+}
+/* DEFAULT */
+@media  (max-width: 1400.1px) {
+    .testimonial-cover{
+        height: 60vh;
+    }
+    .testimonial-cover .slick-slider {
+        height: 45vh;
+    }
+    .testimonial-cover .slick-list {
+        height: 45vh;
+    }
+}
+/* EXTRA SMALL */
+@media  (max-width: 460.1px) {
+    .testimonial-cover{
+        height: 38vh !important;
+    }
+    .testimonial-cover .slick-slider {
+        height: 30vh !important;
+    }
+    .testimonial-cover .slick-list {
+        height: 30vh !important;
+    }
 }

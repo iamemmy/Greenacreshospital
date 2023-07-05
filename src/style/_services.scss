@@ -5,6 +5,9 @@
     margin-top: 20px;
     padding: 30px;
     position: relative;
+    @include mobile {
+        padding: 30px 0;
+    }
     .services-top {
         width: 100%;
         display: flex;
@@ -12,6 +15,9 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+        @include mobile {
+            padding: 0 30px;
+        }
         h3 {
             width: 100%;
             text-align: start;
@@ -26,7 +32,7 @@
         p {
             width: 100%;
             font-size: 16px;
-            color: getColor(color01);
+            color: getColor(color07);
             text-align: start;
             @include tablet {
                 width: 90%;
@@ -48,12 +54,15 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 10px;
+            @include mobile {
+                padding-inline: 30px;
+            }
             .service-card {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
-                border: 2px solid getColor(color01);
+                border: 2px solid getColor(color05);
                 border-radius: 3px;
                 @include mobile {
                     border: 1px solid getColor(color01);
@@ -91,7 +100,7 @@
                     }
                     p {
                         font-size: 16px;
-                        color: getColor(color01);
+                        color: getColor(color07);
                         @include tablet {
                             font-size: 15px;
                         }
@@ -105,6 +114,13 @@
                 width: 100%;
                 object-fit: cover;
                 border-radius: 3px;
+                @include edge {
+                    height: 400px;
+                }
+                @include default {
+                    height: 100%;
+                }
+
             }
         }
     }
@@ -120,7 +136,6 @@
             border: 1px solid getColor(color04);
             padding: 15px 40px;
             transition: all .3s ease;
-            border-radius: 5px;
             @include mobile {
                 padding: 10px 20px;
                 border: none;

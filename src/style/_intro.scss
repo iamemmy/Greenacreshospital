@@ -1,7 +1,4 @@
 .intro {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     padding: 40px;
     .intro-top {
         display: flex;
@@ -10,13 +7,15 @@
         position: relative;
         padding: 40px 30px;
         width: 100%;
+        margin-bottom: 30px;
         @include tablet {
             padding: initial;
             padding-top: 40px;
             padding-bottom: 10px;
         }
         @include mobile {
-            padding-top: 65px;
+            padding-top: 20px;
+            margin-bottom: 0;
         }
         img {
             position: absolute;
@@ -31,16 +30,17 @@
             @include mobile {
                 top: -4%;
                 width: 40px;
+                display: none;
             }
         }
         h3 {
-            font-size: 24px;
+            font-size: 20px;
             color: getColor(color05);
             font-weight: 800;
             text-align: center;
             @include mobile {
                 width: 100%;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: start;
                 font-weight: 500;
             }
@@ -50,93 +50,37 @@
         }
     }
     .intro-about {
+        margin-bottom: 20px;
         h3 {
             width: 100%;
             text-align: start;
-            font-size: 26px;
+            font-size: 30px;
             font-weight: 900;
             text-transform: uppercase;
-            color: #0a460d;
-            line-height: 25px;
+            color: getColor(color04);
+            line-height: 45px;
+            margin-bottom: 20px;
             @include tablet {
-                font-size: 20px;
+                font-size: 25px;
             }
             @include mobile {
-                font-size: 18px;
-                font-weight: 800;
+                font-size: 21px;
+                line-height: 30px;
             }
         }
         p {
             font-size: 16px;
-            color: getColor(color01);
+            color: getColor(color07);
             animation: fade-up 1.7s .6s backwards;
             @include mini-mobile {
                 font-size: 15px;
             }
         }
     }
-    .intro-bottom {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        gap: 20px;
-        @include tablet {
-            flex-direction: column;
-            align-items: start;
-        }
-        .bottom-1 {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            gap: 10px;
-            h4 {
-                font-size: 19px;
-                color: getColor(color04);
-                font-weight: 600;
-                @include mobile {
-                    font-size: 17px;
-                }
-            }
-            p {
-                font-size: 16px;
-                color: getColor(color01);
-            }
-        }
-        .bottom-2 {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            gap: 10px;
-            @include tablet {
-                width: 100%;
-            }
-            h4 {
-                font-size: 19px;
-                color: getColor(color04);
-                font-weight: 600;
-                @include mobile {
-                    font-size: 17px;
-                }
-            }
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                tr {
-                    &:nth-child(even) {
-                        background-color: getColor(color06);
-                    }
-                    td {
-                        border: 1px solid getColor(color05);
-                        font-size: 15px;
-                        color: getColor(color01);
-                        padding: 5px;
-                    }
-                }
-            }
-        }
+    .hr {
+        height: 1px;
+        width: 30%;
+        background-color: getColor(color06);
+        margin-inline: auto;
     }
 }

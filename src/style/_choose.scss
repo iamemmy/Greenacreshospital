@@ -1,0 +1,39 @@
+.choose-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-inline: auto;
+    padding: 0 40px;
+    overflow-x: hidden;
+    @include tablet {
+        width: 100%;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+        row-gap: 40px
+    }
+    .choose-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        @include mobile {
+            width: 50%;
+        }
+        img {
+            width: 60px;
+            border: 1px solid getColor(color04);
+            border-radius: 50%;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+            padding: 5px;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}

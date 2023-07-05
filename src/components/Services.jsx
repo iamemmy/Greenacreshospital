@@ -6,7 +6,7 @@ import Serv1 from '../assets/serv1.png';
 import Serv2 from '../assets/serv2.png';
 import Serv3 from '../assets/serv3.png';
 import Serv4 from '../assets/serv4.png';
-import Servimg from '../assets/hero1.jpg';
+import Servimg from '../assets/slide1.jpg';
 
 export default function Services() {
 
@@ -20,13 +20,13 @@ export default function Services() {
         <div className='services-top'>
           <h3
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-delay="200"
             data-aos-offset="50"
           >Our Services</h3>
           <p
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-delay="300"
             data-aos-offset="50"
           >
@@ -41,7 +41,7 @@ export default function Services() {
 
             <div 
               data-aos="fade-right"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-delay="50"
               data-aos-offset="50"
               className='service-card'
@@ -51,13 +51,13 @@ export default function Services() {
               </div>
               <div className='service-card-content'>
                 <h4>3D/4D ULTRASOUND SCAN</h4>
-                <p>committed to providing you with the best experience during every visit to our facility.</p>
+                <p>Enhanced Ultrasound Imaging: Detailed 3D/4D scans for a remarkable experience.</p>
               </div>
             </div>
 
             <div
               data-aos="fade-right"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-delay="50"
               data-aos-offset="50"
               className='service-card'
@@ -67,13 +67,13 @@ export default function Services() {
               </div>
               <div className='service-card-content'>
                 <h4>LABORATORY SERVICE</h4>
-                <p>committed to providing you with the best experience during every visit to our facility.</p>
+                <p>Precise Laboratory Services: Accurate diagnostics for optimal healthcare outcomes.</p>
               </div>
             </div>
 
             <div
               data-aos="fade-right"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-delay="50"
               data-aos-offset="50"
               className='service-card'
@@ -83,7 +83,7 @@ export default function Services() {
               </div>
               <div className='service-card-content'>
                 <h4>OBSTETRICS SERVICE</h4>
-                <p>committed to providing you with the best experience during every visit to our facility.</p>
+                <p>Expert Obstetrics Service: Dedicated care for a safe and healthy pregnancy.</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export default function Services() {
               </div>
               <div className='service-card-content'>
                 <h4>SURGERY</h4>
-                <p>committed to providing you with the best experience during every visit to our facility.</p>
+                <p>Advanced Surgical Solutions: Skilled expertise for successful procedures and faster recovery.</p>
               </div>
             </div>
 

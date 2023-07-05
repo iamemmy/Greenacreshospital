@@ -1,10 +1,10 @@
 .hero {
     position: relative;
-    height: 80vh;
-    margin-top: 100px;
+    height: 70vh;
+    margin-top: 85px;
     @include mobile {
         height: 55vh;
-        margin-top: 85px;
+        margin-top: 65px;
     }
     .hero-content {
         position: absolute;
@@ -15,47 +15,74 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         gap: 20px;
         width: 100%;
-        padding-inline: 20px;
+        padding-inline: 40px;
+        @include mobile {
+            padding-inline: 20px;
+        }
         h3 {
             color: getColor(color02);
-            text-align: center;
+            text-align: start;
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-size: 45px;
             font-weight: 800;
             animation: fade-up .7s .4s backwards;
+            width: 70%;
             @include tablet {
-                font-size: 28px;
+                font-size: 35px;
+                width: 90%;
             }
             @include mobile {
                 font-size: 25px;
+                width: 100%;
             }
         }
-        a {
-            color: getColor(color01);
-            background-color: getColor(color03);
-            border: 1px solid getColor(color02);
-            padding: 20px 30px;
-            text-decoration: none;
-            transition: all .3s ease;
-            animation: fade-up .7s .6s backwards;
-            border-radius: 5px;
-            &:hover {
-                border: 1px solid getColor(color01);
+        .hero-cta {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            width: 60%;
+            @include tablet {
+                width: 90%;
             }
             @include mobile {
-                padding: 10px 15px;
+                width: 100%;
             }
-            @include tablet {
-                padding: 16px 24px;
+            a {
+                color: getColor(color02);
+                background-color: getColor(color04);
+                border: 1px solid getColor(color02);
+                padding: 15px 25px;
+                text-decoration: none;
+                text-align: center;
+                transition: all .3s ease;
+                animation: fade-up .7s .6s backwards;
+                font-weight: 600;
+                width: 30%;
+                white-space: nowrap;
+                &:nth-child(2) {
+                    background-color: transparent;
+                    &:hover {
+                        background-color: getColor(color04);
+                    }
+                }
+                @include mobile {
+                    padding: 10px 15px;
+                    width: 50% !important;
+                }
+                @include tablet {
+                    padding: 16px 24px;
+                    width: 35%;
+                }
             }
         }
     }
     .carousel-wrap {
-        height: 80vh;
+        height: 70vh;
         @include mobile {
             height: 55vh;
         }
@@ -63,7 +90,7 @@
             display: none;
         }
         .carousel {
-            height: 80vh;
+            height: 70vh;
             @include mobile {
                 height: 55vh;
             }
