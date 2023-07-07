@@ -22,7 +22,11 @@ export default function Appointment() {
                     <input type="text" name="name" placeholder='Full Name' />
                     <input type="number" name="phone" placeholder='Phone Number' />
                 </div>
-                <textarea cols="30" rows="7" name="message" placeholder='Message'></textarea>
+                <div>
+                    <input type="email" name="email" placeholder='Email Address' />
+                    <input type="date" name="date" />
+                </div>
+                <textarea cols="30" rows="7" name="message" placeholder='Enter addittion info'></textarea>
                 <button type="submit"><img src={Send} alt="" />SEND</button>
             </form>
         </div>

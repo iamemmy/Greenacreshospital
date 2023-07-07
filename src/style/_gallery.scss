@@ -12,14 +12,13 @@
     }
     .gallery-top {
         h3 {
-            width: 100%;
             font-size: 28px;
             font-weight: 900;
+            text-transform: uppercase;
             color: getColor(color04);
-            text-align: center;
             animation: fade-up 1.7s .4s backwards;
             @include mobile {
-                text-align: start;
+                // text-align: start;
                 font-size: 17px;
             }
         }

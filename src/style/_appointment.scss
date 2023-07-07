@@ -62,23 +62,15 @@
                 input {
                     width: 100%;
                     outline: transparent;
-                    border-radius: 5px;
                     border: none;
                     padding: 5px;
-                    @include mobile {
-                        border-radius: 0;
-                    }
                 }
             }
             textarea {
                 width: 100%;
                 outline: transparent;
-                border-radius: 5px;
                 border: none;
                 padding: 5px;
-                @include mobile {
-                    border-radius: 0;
-                }
             }
             button {
                 border: 1px solid getColor(color04);

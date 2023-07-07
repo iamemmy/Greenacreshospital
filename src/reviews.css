@@ -165,12 +165,12 @@
 /* EXTRA SMALL */
 @media  (max-width: 460.1px) {
     .testimonial-cover{
-        height: 38vh !important;
+        height: 41vh !important;
     }
     .testimonial-cover .slick-slider {
-        height: 30vh !important;
+        height: 33vh !important;
     }
     .testimonial-cover .slick-list {
-        height: 30vh !important;
+        height: 33vh !important;
     }
 }

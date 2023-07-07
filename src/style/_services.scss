@@ -43,17 +43,21 @@
         }
     }
     .services-bottom {
-        display: flex;
-        gap: 20px;
-        @include mobile {
-            flex-direction: column-reverse;
-        }
+        // display: flex;
+        // gap: 20px;
+        // @include mobile {
+        //     flex-direction: column-reverse;
+        // }
         .service-card-wrap {
-            flex: 1;
+            // flex: 1;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            // flex-direction: column;
+            justify-content: center;
             gap: 10px;
+            @include tablet {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
             @include mobile {
                 padding-inline: 30px;
             }
@@ -62,10 +66,14 @@
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
-                border: 2px solid getColor(color05);
+                border: 1px solid getColor(color05);
                 border-radius: 3px;
+                @include tablet {
+                    width: 40%;
+                }
                 @include mobile {
                     border: 1px solid getColor(color01);
+                    width: 100%;
                 }
                 .service-card-img {
                     flex: 1;
@@ -76,7 +84,7 @@
                         padding: 5px;
                     }
                     img {
-                        width: 80px;
+                        width: 70px;
                         margin: auto;
                         @include tablet {
                             width: 60px;
@@ -108,21 +116,21 @@
                 }
             }
         }
-        .service-main-img {
-            flex: 1;
-            img {
-                width: 100%;
-                object-fit: cover;
-                border-radius: 3px;
-                @include edge {
-                    height: 400px;
-                }
-                @include default {
-                    height: 100%;
-                }
+        // .service-main-img {
+        //     flex: 1;
+        //     img {
+        //         width: 100%;
+        //         object-fit: cover;
+        //         border-radius: 3px;
+        //         @include edge {
+        //             height: 400px;
+        //         }
+        //         @include default {
+        //             height: 100%;
+        //         }
 
-            }
-        }
+        //     }
+        // }
     }
     .services-view-all {
         width: 100%;
@@ -133,18 +141,14 @@
             text-decoration: none;
             background-color: transparent;
             color: getColor(color04);
-            border: 1px solid getColor(color04);
             padding: 15px 40px;
             transition: all .3s ease;
+            @include tablet {
+                border: none;
+            }
             @include mobile {
                 padding: 10px 20px;
                 border: none;
-                &:hover {
-                    background-color: transparent;
-                }
-            }
-            &:hover {
-                background-color: getColor(color03);
             }
         }
     }

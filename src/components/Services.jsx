@@ -104,9 +104,9 @@ export default function Services() {
             </div>
 
           </div>
-          <div className='service-main-img'>
+          {/* <div className='service-main-img'>
             <img src={Servimg} />
-          </div>
+          </div> */}
         </div>
         
         <div className='services-view-all'>
