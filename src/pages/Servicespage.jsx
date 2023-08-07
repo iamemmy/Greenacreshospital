@@ -83,7 +83,9 @@ export default function Servicespage() {
                         <h4>MULTI SPECIALTY CLINIC</h4>
                         <p>
                             Experience thorough physical examinations in a sterile environment, including vital sign 
-                            assessments, consultations with top Medical Officers, and exceptional diagnostic services.
+                            assessments, consultations with top cardiologist, endocrinologist, pulmonologist, 
+                            neurologist, gastroenterologist, paediatrician, oncologist etc and exceptional diagnostic 
+                            services.
                         </p>
                     </div>
                 </div>
@@ -109,9 +111,9 @@ export default function Servicespage() {
                     <div className='servicespage-card-bottom'>
                         <h4>Cervical Cancer Screening/Colposcopy Clinic</h4>
                         <p>
-                            Experience our unique colposcopy practice for women with positive cervical cancer screening 
-                            results (Pap smear, liquid-based cytology, HPV testing). We also provide HPV vaccination for 
-                            eligible females.
+                            Experience our unique colposcopy practice for women with positive cervical cancer screening results (Pap smear, liquid-based cytology, HPV testing).
+                            We offer conservative treatment - LEEP/LLETZ or electrocoagulation  of any such abnormalities detected at colposcopy
+                            We also provide HPV vaccination for eligible females.
                         </p>
                     </div>
                 </div>

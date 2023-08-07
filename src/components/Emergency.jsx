@@ -25,44 +25,11 @@ export default function Emergency() {
                 </p>
             </div>
             <div className='bottom-2'>
-                <h4
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                    data-aos-offset="50"
-                >Service Hours</h4>
-                <table
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                    data-aos-offset="50"
-                >
-                    <tr>
-                        <td>Gynaecology</td>
-                        <td>Mon - Sat</td>
-                        <td>11am - 2pm</td>
-                    </tr>
-                    <tr>
-                        <td>Antenatal</td>
-                        <td>Sat</td>
-                        <td>8am - 5pm</td>
-                    </tr>
-                    <tr>
-                        <td>Laboratory services</td>
-                        <td>Mon - Fri</td>
-                        <td>8am - 8pm</td>
-                    </tr>
-                    <tr>
-                        <td>Laboratory services</td>
-                        <td>Sat</td>
-                        <td>9am - 6pm</td>
-                    </tr>
-                    <tr>
-                        <td>Laboratory services</td>
-                        <td>Sun</td>
-                        <td>12pm - 4pm</td>
-                    </tr>
-                </table>
+                <h4>Emergency Hotline</h4>
+                <h3>08106338579</h3>
+                <p>
+                    We provide 24/7 customer support. Please feel free to contact us for emergency case.
+                </p>
             </div>
         </div>
   )

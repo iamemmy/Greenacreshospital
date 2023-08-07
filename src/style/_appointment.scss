@@ -51,19 +51,43 @@
             align-items: start;
             gap: 20px;
             width: 100%;
+            border: 1px solid getColor(color05);
+            padding: 10px;
+            border-radius: 10px;
             div {
-                display: flex;
-                align-items: center;
-                gap: 20px;
                 width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: baseline;
+                gap: 10px;
                 @include mobile {
-                    flex-direction: column;
+                    grid-template-columns: 1fr;
                 }
-                input {
+                label {
                     width: 100%;
-                    outline: transparent;
-                    border: none;
-                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    color: getColor(color02);
+                    input {
+                        width: 100%;
+                        padding: 5px;
+                        text-indent: 5px;
+                        outline: none;
+                        @include mobile {
+                            padding: 1px;
+                        }
+                    }
+                    select {
+                        width: 100%;
+                        padding: 8px;
+                        outline: none;
+                        color: getColor(color07);
+                        @include mobile {
+                            padding: 4px;
+                        }
+                    }
                 }
             }
             textarea {
@@ -84,6 +108,9 @@
                 }
                 @include default {
                     width: 50%;
+                }
+                @include mobile {
+                    width: 100%;
                 }
                 img {
                     width: 20px;

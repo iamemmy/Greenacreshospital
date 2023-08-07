@@ -15,6 +15,11 @@ import Image9 from '../assets/slide11.jpg';
 import Image10 from '../assets/slide13.jpg';
 import Image11 from '../assets/slide14.jpg';
 import Image12 from '../assets/slide8.jpg';
+import Image13 from '../assets/slide16.jpg';
+import Image14 from '../assets/slide17.jpg';
+import Image15 from '../assets/slide18.jpg';
+import Image16 from '../assets/slide19.jpg';
+import Image17 from '../assets/slide20.jpg';
 
 const Slides = () => {
   let visibleSlides = 3;
@@ -77,6 +82,21 @@ const Slides = () => {
         </div>
         <div>
             <img src={Image12} alt="" />
+        </div>
+        <div>
+            <img src={Image13} alt="" />
+        </div>
+        <div>
+            <img src={Image14} alt="" />
+        </div>
+        <div>
+            <img src={Image15} alt="" />
+        </div>
+        <div>
+            <img src={Image16} alt="" />
+        </div>
+        <div>
+            <img src={Image17} alt="" />
         </div>
         </Carousel>
     </div>

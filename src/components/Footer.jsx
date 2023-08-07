@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <div>
                 <h3>Contact Us</h3>
-                <Link href="tel:08106338579">Contact Us</Link>
+                <Link to="tel:08106338579">Contact Us</Link>
                 <Link to="https://www.facebook.com/profile.php?id=100063471673484">Newsletter</Link>
                 <Link to="tel:08106338579">Feedback</Link>
             </div>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <a href="https://www.linkedin.com/in/yinka-olaniyan-706b575b">
                     <img src={Icon1} alt="" />
                 </a>
-                <a href="https://instagram.com/_greenacreshospital?igshid=NTc4MTIwNjQ2YQ==">
+                <a href="https://instagram.com/greenacreshospital?igshid=NGExMmI2YTkyZg==">
                     <img src={Icon2} alt="" />
                 </a>
                 <a href="https://youtube.com/@GreenAcres-di6sl">

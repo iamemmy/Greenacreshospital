@@ -1,20 +1,44 @@
 .navbar {
     width: 100%;
-    padding: 5px 40px !important;
     background-color: getColor(color04);
+    padding: 60px 40px 5px 40px !important;
     position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
-    @include mobile {
-        padding: 0 40px 0 30px !important;
+    transition: all .3s ease;
+    &.change-padding {
+        padding: 0 40px 5px 40px !important;
     }
-    a {
+    @include tablet {
+        padding: 100px 40px 5px 40px !important;
+    }
+    @include mobile {
+        padding: 155px 30px 0 20px !important;
+        &.change-padding {
+            padding: 0 30px 5px 20px !important;
+        }
+    }
+    .logo {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         img {
             width: 80px;
             @include mobile {
                 width: 70px;
+            }
+        }
+        h4 {
+            color: getColor(color08);
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 0;
+            @include mobile {
+                font-size: 16px;
             }
         }
     }
@@ -65,7 +89,7 @@
             color: getColor(color02);
             background-color: getColor(color03);
             padding: 10px;
-            margin-bottom: 10vh;
+            margin-bottom: 13vh;
             border: 1px solid transparent;
             transition: all .3s ease;
             @include mobile {
@@ -118,6 +142,78 @@
             height: 2px;
             background-color: getColor(color02);
             transition:  .3s ease;
+        }
+    }
+    .nav-location {
+        width: 100%;
+        padding: 2px 40px;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        right: 0;
+        background-color: getColor(color02);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        transition: all .3s ease;
+        @include tablet {
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+        @include mobile {
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 20px;
+            gap: 10px;
+        }
+        .nav-location-1 {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                img {
+                    width: 20px;
+                }
+                p {
+                    color: getColor(color07);
+                    padding-top: 20px;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    @include tablet {
+                        font-size: 13px;
+                    }
+                    @include mobile {
+                        font-size: 14px;
+                        white-space: nowrap;
+                        padding-top: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .nav-location-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            a {
+                text-decoration: none;
+                img {
+                    width: 30px;
+                }
+            }
         }
     }
 }

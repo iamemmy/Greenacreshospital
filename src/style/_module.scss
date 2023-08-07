@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
     // outline: 1px solid red;
 }
+body {
+    overflow-x: hidden;
+    background-color: #ECF2FF !important;
+}
 
 // Function
 @function getColor($key){
@@ -16,12 +20,13 @@
 //Variable
 $colors:(
     color01: #000000,
-    color02: #FFFFFF,
+    color02: #ECF2FF,
     color03: #7895CB,
     color04: #4A55A2,
     color05: #6C757D,
     color06: #dddddd,
-    color07: #616161
+    color07: #616161,
+    color08: #A7C638,
 );
 
 // Mixin
