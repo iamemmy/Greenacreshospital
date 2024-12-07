@@ -3,6 +3,7 @@ import React from 'react'
 import { useSelector, useDispatch, useStore } from 'react-redux';
 import { setIsMenuOpen } from '../ReduxStore/Slice';
 import Image from 'next/image';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 
 export default function Navbar() {
@@ -24,41 +25,53 @@ export default function Navbar() {
 
   return (
     <>
-        <div className='p-4 w-full flex justify-between items-center'>
-            <div className="flex flex-wrap justify-start gap-2">
-                <div className='w-auto flex justify-center items-center space-x-1 lg:space-x-2'>
-                <Image src={"/top1.png"} width={50} height={50} className='w-[20px] lg:w-[30px]' alt="phone" />
-                <p className='text-xs lg:text-base'>(+234)8106338579</p>
-                </div>
+        <div className='px-4 py-2 lg:py-4 w-full flex justify-between items-center'>
 
-                <div className='w-auto flex justify-center items-center space-x-2'>
-                <Image src={"/top2.png"} width={50} height={50} className='w-[20px] lg:w-[30px]' alt="mail" />
-                <p className='text-xs lg:text-base'>info@greenacreshospital.com</p>
-                </div>
+            <div className="flex items-center space-x-4 text-gray-500">
+              {/* Call Link */}
+              <Link href="tel:+2348106338579" className="flex items-center space-x-2 text-xs lg:text-sm">
+                <FaPhoneAlt />
+                <span className='lg:hidden'>(+234)8106338579</span>
+                <span className='hidden lg:block'>(+234)8106338579</span>
+              </Link>
 
-                <div className='w-auto flex justify-center items-center space-x-2'>
-                <Image src={"/top3.png"} width={50} height={50} className='w-[20px] lg:w-[30px]' alt="Location" />
-                <p className='text-xs lg:text-base'>Sunnyvale Homes off Lokogoma express way, Abuja</p>
-                </div>
+              {/* Separator */}
+              <span>|</span>
 
+              {/* Email Link */}
+              <Link href="mailto:info@greenacreshospital.com" className="flex items-center space-x-2 text-xs lg:text-sm">
+                <FaEnvelope />
+                <span className='lg:hidden'>Send us a mail</span>
+                <span className='hidden lg:block'>info@greenacreshospital.com</span>
+              </Link>
+
+              {/* Separator */}
+              <span className='hidden lg:block'>|</span>
+
+              {/* Address Link */}
+              <Link href="https://www.google.com/maps/dir//Green+Acres+Hospital+Abuja+900107+Federal+Capital+Territory/@8.9848868,7.4463498,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x104e0cd701bb6b15:0xbea09bffd4c3b0df" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center space-x-2 text-xs lg:text-sm">
+                <FaMapMarkerAlt />
+                <span>Sunnyvale Homes off Lokogoma express way, Abuja</span>
+              </Link>
             </div>
-            <div className="w-auto hidden lg:flex justify-center items-center space-x-2">
+
+            <div className="hidden lg:flex items-center gap-2">
               <Link href="https://www.facebook.com/profile.php?id=100063471673484">
-                <Image src={"/top4.png"} alt='icon' width={60} height={60} className='w-[30px]' />
+                <Image src="/top4.png" alt="facebook" width={25} height={25} />
               </Link>
               <Link href="https://twitter.com/greenacreshosp?t=5rXgYEQQ3NvQeKbJ1xq-YA&s=09">
-                <Image src={"/top5.png"} alt='icon' width={60} height={60} className='w-[30px]' />
+                <Image src="/top5.png" alt="twitter" width={25} height={25} />
               </Link>
               <Link href="https://instagram.com/greenacreshospital?igshid=NGExMmI2YTkyZg==">
-                <Image src={"/top6.png"} alt='icon' width={60} height={60} className='w-[30px]' />
+                <Image src="/top6.png" alt="instagram" width={25} height={25} />
               </Link>
               <Link href="https://www.linkedin.com/in/yinka-olaniyan-706b575b">
-                <Image src={"/top7.png"} alt='icon' width={60} height={60} className='w-[30px]' />
+                <Image src="/top7.png" alt="linkedin" width={25} height={25} />
               </Link>
             </div>
         </div>
 
-        <header className='flex justify-between items-center py-4 px-4 lg:px-8 bg-customBlue text-white'>
+        <header className='flex justify-between items-center py-2 lg:py-4 px-4 lg:px-8 bg-customBlue text-white'>
 
         <div className='w-auto flex justify-center items-center space-x-3'>
             <Image src={'/new-logo.png'} alt='icon' width={60} height={60} className='w-[60px] lg:w-[80px]'/>
