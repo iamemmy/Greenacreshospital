@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import Loader from '@/components/Loader';
 
 const AppointmentPage = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +17,20 @@ const AppointmentPage = () => {
       [name]: value
     });
   };
+
+  const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setLoading(false);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <Loader />
+  }
 
   return (
     <div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -6,6 +6,7 @@ import { AiOutlineClockCircle, AiOutlineEdit } from 'react-icons/ai';
 import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 import Image from 'next/image';
+import Loader from '@/components/Loader';
 
 const client = createClient({
   space: "e8ks3xe9z0q5",
@@ -32,6 +33,15 @@ const options = {
 
 const BlogDetails = ({ blogPost }) => {
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+      setLoading(false);
+      }, 1000);
+  
+      return () => clearTimeout(timer);
+  }, []);
 
   if (router.isFallback) {
     return <div>Loading...</div>;
@@ -39,6 +49,10 @@ const BlogDetails = ({ blogPost }) => {
 
   if (!blogPost) {
     return <div>Error: Blog post not found</div>;
+  }
+
+  if (loading) {
+    return <Loader />
   }
 
   const { thumbnail, title, author, article, date } = blogPost.fields;

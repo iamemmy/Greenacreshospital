@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Head from 'next/head';
+import Loader from '@/components/Loader';
 
 export default function Hmo() {
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setLoading(false);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+    }, []);
 
     const hmoList = [
         "AXAMANSARD",
@@ -24,6 +35,10 @@ export default function Hmo() {
         "ECOWAS COMMISSION",
         "ECOWAS COURT OF JUSTICE"
     ]
+
+    if (loading) {
+        return <Loader />
+    }
 
   return (
     <div>

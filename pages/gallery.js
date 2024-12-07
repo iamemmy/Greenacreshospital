@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Head from 'next/head';
 import Image from 'next/image';
+import Loader from '@/components/Loader';
 
 const images = [
   '/newImg.jpeg',
@@ -30,15 +31,28 @@ const images = [
 ];
 
 const GalleryPage = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-  const openImage = (image) => {
-    setSelectedImage(image);
-  };
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setLoading(false);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+    }, []);
 
-  const closeImage = () => {
-    setSelectedImage(null);
-  };
+    const openImage = (image) => {
+        setSelectedImage(image);
+    };
+
+    const closeImage = () => {
+        setSelectedImage(null);
+    };
+
+    if (loading) {
+        return <Loader />
+    }
 
   return (
     <div>

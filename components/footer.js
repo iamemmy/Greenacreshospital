@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='px-8 py-10 w-full flex flex-col justify-between items-center bg-customBlue text-white'>
         <div className='w-full flex flex-col lg:flex-row pb-10 lg:pb-0 justify-center items-center gap-4'>
             <div className='w-full md:w-1/4 lg:w-1/4 flex justify-center items-center'>
-                <Image width={120} height={120} className='w-[160px]' src={'/logo.png'} alt="" />
+                <Image width={120} height={120} className='w-[160px]' src={'/new-logo.png'} alt="" />
             </div>
             <div className='w-full md:w-1/4 lg:w-1/4 flex flex-col justify-start items-center'>
                 <h3 className='text-lg lg:text-xl font-bold'>Green Acres Hospital</h3>

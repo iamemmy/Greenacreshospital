@@ -5,6 +5,7 @@ import Footer from '../../components/footer';
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
+import Loader from '@/components/Loader';
 
 const client = createClient({
   space: "e8ks3xe9z0q5",
@@ -13,6 +14,15 @@ const client = createClient({
 
 const BlogPage = () => {
   const [blogPosts, setBlogPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setLoading(false);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+    }, []);
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
@@ -31,6 +41,10 @@ const BlogPage = () => {
     } else {
         return text;
     }
+  }
+
+  if (loading) {
+    return <Loader />
   }
 
   return (

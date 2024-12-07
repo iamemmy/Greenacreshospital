@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Navbar from '../components/navbar';
 import CustomMap from '../components/customMap';
 import Footer from '../components/footer';
 import Head from 'next/head';
+import Loader from '@/components/Loader';
 
 export default function Contact() {
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+        setLoading(false);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <Loader />
+    }
+
   return (
     <div>
         <Head>

@@ -1,12 +1,23 @@
-import React from 'react'
 import Navbar from '../components/navbar'
 import Image from 'next/image'
 import Link from 'next/link';
 import { MapPin, Award, Star } from 'react-feather';
 import Footer from '../components/footer';
 import Head from 'next/head';
+import Loader from '@/components/Loader';
+import React, { useState, useEffect } from 'react';
 
 export default function Index() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+    setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const attrImg = ['/hero1.jpg', '/rev2.jpeg', '/rev.jpeg'];
   const dataAttribute = [
@@ -47,6 +58,10 @@ export default function Index() {
     { id: 2, author: "Igbokwe", stars: 4.5, review: "Customer service is superb. Always someone present to answer the phone in well detailed and comforting manner." },
     { id: 3, author: "Agunloye Ayodele", stars: 4, review: "The staffs are well mannered, aslo the welcome is friendly. Also, I like their approach to emergency." },
   ];
+
+  if (loading) {
+    return <Loader />
+  }
 
 
   return (
@@ -129,7 +144,7 @@ export default function Index() {
           <p className="mb-4 text-sm lg:text-base">
             We are a team at Green Acres Hospital driven by professionalism, delivering outstanding medical care in a conducive and ambient environment. With cutting-edge technology, we strive to provide the best possible care to our esteemed clients. We consider it a privilege to earn the trust of our numerous clients and are committed to delivering personalized, warm, and friendly professional service that goes the extra mile.
           </p>
-          <Link href={'tel:08106338579'} className="bg-customBlue border border-white text-white px-4 py-2 font-semibold shadow-lg mt-8">
+          <Link href={'tel:08106338579'} className="bg-customBlue border border-white text-white px-4 py-2 font-semibold shadow-lg mt-8 block w-[fit-content]">
             Reach us
           </Link>
         </div>

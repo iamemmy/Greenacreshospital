@@ -61,7 +61,7 @@ export default function Navbar() {
         <header className='flex justify-between items-center py-4 px-4 lg:px-8 bg-customBlue text-white'>
 
         <div className='w-auto flex justify-center items-center space-x-3'>
-            <Image src={'/logo.png'} alt='icon' width={60} height={60} className='w-[60px] lg:w-[80px]'/>
+            <Image src={'/new-logo.png'} alt='icon' width={60} height={60} className='w-[60px] lg:w-[80px]'/>
             <h2 className='font-bold text-base'>GREEN ACRES HOSPITAL</h2>
         </div>
 
